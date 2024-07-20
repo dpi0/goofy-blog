@@ -1,0 +1,26 @@
+{% extends "_base.html" %}
+
+<!-- this is outside of content block -->
+<!-- this sends the title answer to _base.html's title block -->
+{% block title %}{{page.title}}{% endblock title %}
+
+<!-- after this, the actual content to be displayed starts -->
+{% block content %}
+
+<div class="breadcrumbs">
+  <a href="{{ config.base_url }}">Home</a>&nbsp;»&nbsp;
+  <!-- <a href="{{ get_url(path='@/_index.md') }}">Home</a>&nbsp;»&nbsp; -->
+  <a href="{{ page.permalink }}">{{ page.title }}</a>
+</div>
+
+<h1 class="title">
+  {{page.title}}
+
+</h1>
+
+<p class="subtitle"><strong>{{ page.date }}</strong></p>
+
+<!-- this loads the actual md content besides the front matter -->
+{{ page.content | safe }}
+
+{% endblock content %}

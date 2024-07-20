@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- this asks the question to each html page extending this _base.html -->
+    <!-- when page gives it the answer, it shows that inside of it -->
+    <title>{% block title %}{% endblock title %}</title>
+  </head>
+
+  <body>
+    <section class="section">
+      <!-- this loads the content -->
+      <div class="container">{% block content %} {% endblock %}</div>
+    </section>
+  </body>
+</html>

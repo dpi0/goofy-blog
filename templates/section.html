@@ -1,0 +1,25 @@
+{% extends "_base.html" %}
+
+<!-- this is outside of content block -->
+<!-- this sends the title answer to _base.html's title block -->
+{% block title %}{{ section.title }} | section {% endblock title %}
+
+<!-- after this, the actual content to be displayed starts -->
+{% block content %}
+
+<h1 class="title">
+  {{ section.title }}
+</h1>
+
+<ul>
+
+  {% for page in section.pages %}
+  <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+  {% endfor %}
+
+</ul>
+
+<!-- this loads the actual md content besides the front matter -->
+{{ section.content | safe }}
+
+{% endblock content %}
