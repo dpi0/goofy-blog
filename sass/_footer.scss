@@ -1,0 +1,23 @@
+.footer-links {
+  text-align: left;
+}
+
+.footer-link-separator {
+  padding: 0 8px;
+  color: #000;
+}
+
+.footer-maintainer {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .footer-links {
+    text-align: center;
+    margin: 0.3em;
+  }
+  .footer-maintainer {
+    text-align: center;
+    margin-bottom: 0.3em;
+  }
+}

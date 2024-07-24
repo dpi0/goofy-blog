@@ -18,4 +18,4 @@
 <p class="subtitle"><strong>{{ page.date }}</strong></p>
 
 <!-- this loads the actual md content besides the front matter -->
-{{ page.content | safe }} {% endblock content %}
+{{ page.content | safe }} {% include "_footer.html" %} {% endblock content %}
