@@ -1,5 +1,7 @@
+@use "theme";
+
 .sidebar {
-  background-color: lightpink;
+  background-color: var(--sidebar-bg-color);
   padding: 0.5em; // Add padding to the sidebar to ensure inner elements are properly aligned
 }
 
@@ -7,7 +9,7 @@
   display: none; // Hide navbar by default
   justify-content: space-between;
   align-items: center;
-  background-color: yellow;
+  background-color: var(--accent);
   padding: 0.5em;
 }
 
@@ -19,8 +21,9 @@
 }
 
 .title-logo {
-  background-color: yellow;
+  background-color: var(--accent);
   font-size: 2em;
+  color: var(--sidebar-bg-color);
   font-weight: bold;
   text-decoration: none;
   margin: 0; // Remove any default margins that might affect alignment
@@ -37,7 +40,7 @@
   }
   .sidebar.show {
     display: block; // Show sidebar when toggle is active
-    background-color: yellow;
+    background-color: var(--accent);
   }
   .sidebar .title-logo {
     display: none; // Hide logo in sidebar on small screens

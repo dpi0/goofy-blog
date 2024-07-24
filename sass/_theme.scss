@@ -1,0 +1,17 @@
+:root {
+  --bg-color: #fff;
+  --text-color: #121212;
+  --link-color: #0000ff;
+  --sidebar-bg-color: lightpink;
+  --content-bg-color: lightblue;
+  --accent: yellow;
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #fff;
+  --link-color: #00ff00;
+  --sidebar-bg-color: darkslategray;
+  --content-bg-color: darkcyan;
+  --accent: green;
+}
