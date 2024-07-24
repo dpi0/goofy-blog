@@ -11,10 +11,12 @@ body {
 
 .content {
   background-color: lightblue;
+  padding: 0.5em; // Add padding to the sidebar to ensure inner elements are properly aligned
 }
 
 .sidebar {
   background-color: lightpink;
+  padding: 0.5em; // Add padding to the sidebar to ensure inner elements are properly aligned
 }
 
 .l-box {
@@ -28,18 +30,14 @@ pre {
   font-size: 0.9rem;
 }
 
-.logo-span {
-  background-color: yellow;
-  font-size: 2em;
-  font-weight: bold;
-  text-decoration: none;
-}
-
 .title-logo {
   background-color: yellow;
   font-size: 2em;
   font-weight: bold;
   text-decoration: none;
+  margin: 0; // Remove any default margins that might affect alignment
+  padding: 1em 0; // Add padding for proper alignment and spacing
+  display: block; // Ensure it behaves like a block-level element
 }
 
 a {
@@ -61,8 +59,8 @@ strong {
   display: none; // Hide navbar by default
   justify-content: space-between;
   align-items: center;
-  background-color: lightpink;
-  padding: 1em;
+  background-color: yellow;
+  padding: 0.5em;
 }
 
 .navbar-toggle {
@@ -81,6 +79,7 @@ strong {
   }
   .sidebar.show {
     display: block; // Show sidebar when toggle is active
+    background-color: yellow;
   }
   .sidebar .title-logo {
     display: none; // Hide logo in sidebar on small screens
