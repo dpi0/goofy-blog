@@ -1,6 +1,44 @@
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const sidebar = document.getElementById("sidebar");
+    const toggleButton = document.getElementById("navbar-toggle");
+
+    toggleButton.addEventListener("click", function () {
+      sidebar.classList.toggle("show");
+    });
+  });
+</script>
+
+{#
 <a href="{{ get_url(path='/') | safe }}"
   ><h1 class="title-logo">fuck me in the arse</h1></a
 >
+#}
+
+<nav>
+  <ul>
+    <li><a href="/link1">Link 1</a></li>
+    <li><a href="/link2">Link 2</a></li>
+    <li><a href="/link3">Link 3</a></li>
+  </ul>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit at
+    tempore, minus quisquam nemo blanditiis vitae repudiandae quis et porro ad
+    corporis quo minima harum laboriosam provident culpa! Molestias, totam.
+  </p>
+
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit at
+    tempore, minus quisquam nemo blanditiis vitae repudiandae quis et porro ad
+    corporis quo minima harum laboriosam provident culpa! Molestias, totam.
+  </p>
+
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit at
+    tempore, minus quisquam nemo blanditiis vitae repudiandae quis et porro ad
+    corporis quo minima harum laboriosam provident culpa! Molestias, totam.
+  </p>
+</nav>
 
 <p>
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit at
