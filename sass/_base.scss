@@ -34,6 +34,7 @@ pre {
   font-weight: bold;
   text-decoration: none;
 }
+
 .title-logo {
   background-color: yellow;
   font-size: 2em;
@@ -54,4 +55,43 @@ strong {
 .pure-g {
   max-width: 1600px;
   margin: 0 auto;
+}
+
+.navbar {
+  display: none; // Hide navbar by default
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightpink;
+  padding: 1em;
+}
+
+.navbar-toggle {
+  font-size: 2em;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: flex; // Show navbar on small screens
+  }
+  .sidebar {
+    display: none; // Hide sidebar by default on small screens
+  }
+  .sidebar.show {
+    display: block; // Show sidebar when toggle is active
+  }
+  .sidebar .title-logo {
+    display: none; // Hide logo in sidebar on small screens
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    display: none; // Hide navbar on larger screens
+  }
+  .sidebar .title-logo {
+    display: block; // Show logo in sidebar on larger screens
+  }
 }
