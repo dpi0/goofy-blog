@@ -21,13 +21,17 @@
 
   <body>
     <div class="navbar">
-      <div class="title-logo">Your Logo Here</div>
+      <a href="{{ get_url(path='/') | safe }}"
+        ><div class="title-logo">Your Logo Here</div></a
+      >
       <button id="navbar-toggle" class="navbar-toggle">☰</button>
     </div>
     <div class="pure-g">
       <div class="pure-u-1 pure-u-md-1-4">
         <section class="sidebar" id="sidebar">
-          <div class="title-logo">Your Logo Here</div>
+          <a href="{{ get_url(path='/') | safe }}"
+            ><div class="title-logo">Your Logo Here</div></a
+          >
           {% include "_sidebar.html" %}
         </section>
       </div>
