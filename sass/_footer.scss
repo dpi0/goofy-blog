@@ -1,3 +1,8 @@
+.footer {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
 .footer-links {
   text-align: left;
 }
@@ -11,6 +16,11 @@
 }
 
 @media (max-width: 768px) {
+  .footer {
+    margin-top: 0em;
+    margin-bottom: 0em;
+  }
+
   .footer-links {
     text-align: center;
     margin: 0.3em;
