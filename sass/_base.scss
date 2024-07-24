@@ -1,0 +1,57 @@
+$fg: #121212;
+$bg: #fff;
+
+body {
+  background-color: $bg;
+  font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: $fg;
+  font-size: 1.2em;
+  padding: 1%;
+}
+
+.content {
+  background-color: lightblue;
+}
+
+.sidebar {
+  background-color: lightpink;
+}
+
+.l-box {
+  padding: 1em;
+  background-color: lightcoral;
+}
+
+pre {
+  padding: 8px 15px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+}
+
+.logo-span {
+  background-color: yellow;
+  font-size: 2em;
+  font-weight: bold;
+  text-decoration: none;
+}
+.title-logo {
+  background-color: yellow;
+  font-size: 2em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a {
+  // color: #f5c211;
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+strong {
+  overflow-wrap: break-word;
+}
+
+.pure-g {
+  max-width: 1600px;
+  margin: 0 auto;
+}
