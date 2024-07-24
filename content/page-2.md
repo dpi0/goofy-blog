@@ -7,7 +7,7 @@ date = 2024-07-20
 
 Kernel-based Virtual Machine, is a hypervisor built into the Linux kernel
 
-![image](https://i.ibb.co/7VP0b22/kvm.png)
+<img class="pure-img" src="https://i.ibb.co/7VP0b22/kvm.png">
 
 check if virutalization is enabled or not, greater than 0 yes, if not then change from BIOS: `grep -Ec '(vmx|svm)' /proc/cpuinfo`
 
@@ -148,7 +148,7 @@ table ip NAT_KVM {
 }
 ```
 
-![image](https://i.ibb.co/nmtSDyr/A-13-21-20-01-Jul.png)
+<img class="pure-img" src="https://i.ibb.co/nmtSDyr/A-13-21-20-01-Jul.png">
 
 ```ascii
          ┌────────────────────┐
