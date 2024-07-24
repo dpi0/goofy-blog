@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- this asks the question to each html page extending this _base.html -->
-    <!-- when page gives it the answer, it shows that inside of it -->
+    <meta name="color-scheme" content="light dark" />
     <title>{% block title %}{% endblock title %}</title>
     <link
       rel="stylesheet"
@@ -17,6 +16,13 @@
       href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css"
     />
     <link rel="stylesheet" href="{{ get_url(path='styles.css') | safe }}" />
+    {# Prevents FOUC #}
+    <script>
+      (function () {
+        const currentTheme = localStorage.getItem("theme") || "light";
+        document.documentElement.setAttribute("data-theme", currentTheme);
+      })();
+    </script>
   </head>
 
   <body>
@@ -38,11 +44,19 @@
       <div class="pure-u-1 pure-u-md-3-4">
         <section class="content">{% block content %} {% endblock %}</section>
       </div>
-      {#
-      <div class="pure-u-1 pure-u-md-1-8">
-        <section class="toc" id="toc">{% include "_toc.html" %}</section>
-      </div>
-      #}
     </div>
+    <script src="/js/main.js"></script>
+    {# Prevents icon flicker to moon on reload #}
+    <script>
+      (function () {
+        const currentTheme = localStorage.getItem("theme") || "light";
+        document.documentElement.setAttribute("data-theme", currentTheme);
+
+        const toggleButton = document.getElementById("theme-toggle");
+        const moonIcon = toggleButton.getAttribute("data-moon-icon");
+        const sunIcon = toggleButton.getAttribute("data-sun-icon");
+        toggleButton.innerHTML = currentTheme === "light" ? moonIcon : sunIcon;
+      })();
+    </script>
   </body>
 </html>

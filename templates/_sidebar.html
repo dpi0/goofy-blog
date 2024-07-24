@@ -1,4 +1,16 @@
 <nav>
+  {% set moon_icon = load_data(path="icon/moon.svg") %} {% set sun_icon =
+  load_data(path="icon/sun.svg") %}
+  <button
+    id="theme-toggle"
+    aria-label="theme switch"
+    data-moon-icon="{{ moon_icon }}"
+    data-sun-icon="{{ sun_icon }}"
+    class="theme-toggle"
+  >
+    {{ moon_icon | safe }}
+  </button>
+
   <ul>
     <li><a href="/link1">Link 1</a></li>
     <li><a href="/link2">Link 2</a></li>
