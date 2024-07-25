@@ -16,13 +16,6 @@
       href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css"
     />
     <link rel="stylesheet" href="{{ get_url(path='styles.css') | safe }}" />
-    {# Prevents FOUC #}
-    <script>
-      (function () {
-        const currentTheme = localStorage.getItem("theme") || "light";
-        document.documentElement.setAttribute("data-theme", currentTheme);
-      })();
-    </script>
     {# Loads light icon, if using favicon.ico no need to include this, zola auto
     detects #}
     <link
@@ -34,12 +27,7 @@
   </head>
 
   <body>
-    <div class="navbar">
-      <a href="{{ get_url(path='/') | safe }}"
-        ><div class="title-logo">Your Logo Here</div></a
-      >
-      <button id="navbar-toggle" class="navbar-toggle">☰</button>
-    </div>
+    {% include "_navbar.html" %}
     <div class="pure-g blog">
       <div class="pure-u-1 pure-u-md-1-4">
         <section class="sidebar" id="sidebar">
@@ -53,13 +41,15 @@
         <section class="content">{% block content %} {% endblock %}</section>
       </div>
     </div>
-    <script src="/js/main.js"></script>
-    {# Prevents icon flicker to moon on reload #}
+    {# Prevents FUOC & icon flicker on reload #} {# Inline script is executed
+    immediately #}
     <script>
       (function () {
+        // Prevent FUOC
         const currentTheme = localStorage.getItem("theme") || "light";
         document.documentElement.setAttribute("data-theme", currentTheme);
 
+        // Prevent theme icon flicker
         const toggleButton = document.getElementById("theme-toggle");
         const moonIcon = toggleButton.getAttribute("data-moon-icon");
         const sunIcon = toggleButton.getAttribute("data-sun-icon");
