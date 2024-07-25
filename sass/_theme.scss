@@ -4,7 +4,9 @@
   --link-color: #0000ff;
   --sidebar-bg-color: lightpink;
   --content-bg-color: lightblue;
-  --accent: yellow;
+  --accent: pink;
+  --icon-color-light: #000000;
+  --icon-color-dark: #ffffff;
 }
 
 [data-theme="dark"] {
@@ -13,5 +15,13 @@
   --link-color: #00ff00;
   --sidebar-bg-color: darkslategray;
   --content-bg-color: darkcyan;
-  --accent: green;
+  --accent: #00ff00;
+}
+
+[data-theme="light"] .theme-toggle svg {
+  color: var(--icon-color-light);
+}
+
+[data-theme="dark"] .theme-toggle svg {
+  color: var(--icon-color-dark);
 }

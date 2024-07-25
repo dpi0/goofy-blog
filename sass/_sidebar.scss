@@ -1,8 +1,9 @@
 @use "theme";
 
 .sidebar {
-  background-color: var(--sidebar-bg-color);
-  padding: 0.5em; // Add padding to the sidebar to ensure inner elements are properly aligned
+  // background-color: var(--sidebar-bg-color);
+  padding: 1em;
+  text-align: right;
 }
 
 .navbar {
@@ -13,44 +14,71 @@
   padding: 0.5em;
 }
 
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .navbar-toggle {
   font-size: 2em;
   background: none;
   border: none;
   cursor: pointer;
+  margin-left: auto;
 }
 
 .theme-toggle {
   padding: 0;
+  margin-top: 1em;
   border: none;
   background-color: transparent;
   cursor: pointer;
+  svg {
+    width: 30px;
+    height: 30px;
+    color: red;
+  }
 }
 
 .title-logo {
   background-color: var(--accent);
-  font-size: 2em;
-  color: var(--sidebar-bg-color);
+  font-size: 1.7em;
+  color: black;
   font-weight: bold;
   text-decoration: none;
-  margin: 0; // Remove any default margins that might affect alignment
-  padding: 1em 0; // Add padding for proper alignment and spacing
-  display: block; // Ensure it behaves like a block-level element
+  padding: 0.5em;
+  // padding-right: 0.3em;
+  border-radius: 0.5rem;
+  display: block;
 }
 
 @media (max-width: 768px) {
   .navbar {
     display: flex; // Show navbar on small screens
   }
+
   .sidebar {
     display: none; // Hide sidebar by default on small screens
+    text-align: left;
   }
+
+  .sidebar ul {
+    list-style: none;
+    padding: 0; /* Optional: to remove any default padding */
+    margin: 0; /* Optional: to remove any default margin */
+  }
+
   .sidebar.show {
     display: block; // Show sidebar when toggle is active
     background-color: var(--accent);
   }
+
   .sidebar .title-logo {
     display: none; // Hide logo in sidebar on small screens
+  }
+  .title-logo {
+    margin-top: 0rem;
   }
 }
 
@@ -58,6 +86,7 @@
   .navbar {
     display: none; // Hide navbar on larger screens
   }
+
   .sidebar .title-logo {
     display: block; // Show logo in sidebar on larger screens
   }

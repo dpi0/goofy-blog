@@ -10,12 +10,19 @@ body {
 .blog {
   max-width: 1100px;
   margin: 0 auto;
-  background-color: lightgreen;
+  // background-color: lightgreen;
+  margin-top: 1.5rem;
 }
 
 .content {
-  background-color: var(--content-bg-color);
-  padding: 0.5em;
+  // background-color: var(--content-bg-color);
+  padding: 1em;
+  margin-left: 2em;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.7em;
 }
 
 pre {
@@ -32,4 +39,16 @@ a {
 
 strong {
   overflow-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 1.1em;
+  }
+  .content {
+    // background-color: var(--content-bg-color);
+    padding: 1em;
+    margin-top: 0.5rem;
+    margin-left: 0em; // Add margin to create space from the sidebar
+  }
 }
