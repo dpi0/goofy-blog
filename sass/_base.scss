@@ -89,3 +89,12 @@ tr:nth-child(even) {
 tr:hover {
   background-color: var(--table-hover-bg);
 }
+
+.title {
+  font-size: 2em;
+}
+
+.date {
+  font-weight: 1000;
+  // background-color: red;
+}
