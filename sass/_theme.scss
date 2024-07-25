@@ -5,8 +5,12 @@
   --sidebar-bg-color: lightpink;
   --content-bg-color: lightblue;
   --accent: pink;
-  --icon-color-light: #000000;
-  --icon-color-dark: #ffffff;
+  --icon-color: #121212;
+
+  --table-header-bg: #e5e5e5;
+  --table-row-bg: #f9f9f9;
+  --table-hover-bg: #f1f1f1;
+  --table-border: #ddd;
 }
 
 [data-theme="dark"] {
@@ -16,12 +20,9 @@
   --sidebar-bg-color: darkslategray;
   --content-bg-color: darkcyan;
   --accent: #00ff00;
-}
-
-[data-theme="light"] .theme-toggle svg {
-  color: var(--icon-color-light);
-}
-
-[data-theme="dark"] .theme-toggle svg {
-  color: var(--icon-color-dark);
+  --icon-color: #fff;
+  --table-header-bg: #333;
+  --table-row-bg: #111;
+  --table-hover-bg: #222;
+  --table-border: #444;
 }
