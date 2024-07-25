@@ -5,6 +5,7 @@ function initializeThemeToggle() {
 
     document.documentElement.setAttribute("data-theme", currentTheme);
     updateIcon(currentTheme);
+    updateFavicon(currentTheme);
 
     toggleButton.addEventListener("click", function () {
       const currentTheme = document.documentElement.getAttribute("data-theme");
@@ -12,6 +13,7 @@ function initializeThemeToggle() {
       document.documentElement.setAttribute("data-theme", newTheme);
       localStorage.setItem("theme", newTheme);
       updateIcon(newTheme);
+      updateFavicon(newTheme);
     });
   });
 
@@ -22,6 +24,12 @@ function initializeThemeToggle() {
     toggleButton.innerHTML = theme === "light" ? moonIcon : sunIcon;
     toggleButton.title =
       theme === "light" ? "Switch to Dark mode" : "Switch to Light mode";
+  }
+
+  function updateFavicon(theme) {
+    const favicon = document.getElementById("favicon");
+    favicon.href =
+      theme === "light" ? "/favicon-light.ico" : "/favicon-dark.ico";
   }
 }
 

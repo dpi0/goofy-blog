@@ -23,6 +23,14 @@
         document.documentElement.setAttribute("data-theme", currentTheme);
       })();
     </script>
+    {# Loads light icon, if using favicon.ico no need to include this, zola auto
+    detects #}
+    <link
+      rel="icon"
+      id="favicon"
+      href="{{ get_url(path='favicon-light.ico') | safe }}"
+    />
+    <script src="{{ get_url(path='js/main.js') | safe }}" defer></script>
   </head>
 
   <body>
@@ -56,6 +64,13 @@
         const moonIcon = toggleButton.getAttribute("data-moon-icon");
         const sunIcon = toggleButton.getAttribute("data-sun-icon");
         toggleButton.innerHTML = currentTheme === "light" ? moonIcon : sunIcon;
+
+        // Prevent favicon flicker
+        const favicon = document.getElementById("favicon");
+        favicon.href =
+          currentTheme === "light"
+            ? "{{ get_url(path='favicon-light.ico') | safe }}"
+            : "{{ get_url(path='favicon-dark.ico') | safe }}";
       })();
     </script>
   </body>
