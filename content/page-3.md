@@ -101,7 +101,7 @@ end
 
 ### Large image
 
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+{{ img(src="https://docs.github.com/assets/cb-23923/mw-1440/images/help/repository/branching.webp", alt="A description of the image") }}
 
 ### Definition lists can be used with HTML syntax
 
