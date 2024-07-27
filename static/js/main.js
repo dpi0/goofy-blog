@@ -44,7 +44,27 @@ function enableNavBarDropdown() {
   });
 }
 
+function headerPermalink() {
+  document.addEventListener("DOMContentLoaded", function () {
+    const headers = document.querySelectorAll("h1, h2, h3");
+
+    headers.forEach((header) => {
+      const id = header.id;
+      if (id) {
+        const link = document.createElement("a");
+        link.href = `#${id}`;
+        link.className = "header-permalink";
+        link.innerHTML = "#";
+        link.setAttribute("title", "Permanent Link");
+        header.appendChild(link);
+        header.classList.add("header-with-permalink");
+      }
+    });
+  });
+}
+
 //--------------------------------------------
 
 initializeThemeToggle();
 enableNavBarDropdown();
+headerPermalink();

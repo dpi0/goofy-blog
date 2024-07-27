@@ -103,3 +103,25 @@ figcaption {
   text-align: center;
   padding: 0.5em;
 }
+
+.header-with-permalink {
+  position: relative;
+}
+
+.header-permalink {
+  text-decoration: none;
+  margin-left: 8px;
+  opacity: 0;
+  color: inherit;
+  color: var(--permalink);
+  transition: opacity 0.2s;
+}
+
+.header-with-permalink:hover .header-permalink {
+  opacity: 1;
+}
+
+.header-with-permalink:hover .header-permalink:hover {
+  color: var(--accent);
+  transition: color 0.2s, opacity 0.2s;
+}
