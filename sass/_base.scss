@@ -160,3 +160,15 @@ blockquote {
   border-radius: 5px;
   box-shadow: 0 0 20px #ff000033;
 }
+
+details {
+  border: 1.5px solid var(--expand);
+  border-radius: 3px;
+  margin: 1em 0;
+  padding: 0.5em 1em;
+  display: block;
+}
+
+details > summary span {
+  margin-left: 0.25em;
+}
