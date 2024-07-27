@@ -1,10 +1,8 @@
 +++
-title = "page-2"
+title = "KVM"
 date = 2024-07-20
 updated = 2024-07-20
 +++
-
-## `KVM`
 
 Kernel-based Virtual Machine, is a hypervisor built into the Linux kernel
 

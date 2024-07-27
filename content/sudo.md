@@ -1,5 +1,5 @@
 +++
-title = "page-1"
+title = "sudo"
 date = 2024-07-20
 updated = 2024-07-20
 +++
