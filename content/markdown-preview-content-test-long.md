@@ -114,6 +114,38 @@ let six = plus_one(five);
 let none = plus_one(None);
 ```
 
+### sample html table
+
+<table>
+  <tr>
+    <th>tr start th Header 1</th>
+    <th>th Header 2</th>
+  </tr>
+  <tr>
+    <td>td Cell 1</td>
+    <td>td Cell 2</td>
+  </tr>
+  <tr>
+    <td>td Cell 3</td>
+    <td>td Cell 4 tr end</td>
+  </tr>
+</table>
+
+**codeblock shortcode**
+
+```rs
+fn plus_one(x: Option<i32>) -> Option<i32> {
+    match x {
+        None => None,
+        Some(i) => Some(i + 1),
+    }
+}
+
+let five = Some(5);
+let six = plus_one(five);
+let none = plus_one(None);
+```
+
 with line number:
 
 ```rs,linenos
@@ -171,8 +203,6 @@ let five = Some(5);
 let six = plus_one(five);
 let none = plus_one(None);
 ```
-
-{% end %}
 
 with filename, line number, highlight:
 
@@ -443,6 +473,27 @@ console.log(ultimateTruth);
 ```
 
 And here is some `inline code`!
+
+- some `inline code` inside a ul
+- this is a test
+- here `code` more
+
+1. some `more code` inside a li
+2. this is a `code`
+3. inside a li
+
+| Tables     |       Are       |  Cool |
+| ---------- | :-------------: | ----: |
+| col 3 is   | `right-aligned` | $1600 |
+| `col 2 is` |    centered     |   $12 |
+
+# `heading 1` inline code
+
+## some `heading 2` code
+
+### hello `heading 3`
+
+#### `heading 4`
 
 ## Tables
 

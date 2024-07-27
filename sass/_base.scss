@@ -30,7 +30,6 @@ pre {
   overflow-x: auto;
   font-size: 0.9rem;
 }
-
 a {
   color: var(--accent);
   text-decoration: none;
@@ -70,36 +69,6 @@ hr {
   background: var(--text-color);
   height: 0.1em;
   margin: 0 0 1em;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 1em;
-  color: var(--text-color);
-  border-spacing: 0;
-  font-size: 1em;
-  border-radius: 0.1em;
-  overflow: hidden;
-}
-
-th,
-td {
-  padding: 0.5em;
-  border-bottom: 1px solid var(--table-border);
-}
-
-th {
-  background-color: var(--table-header-bg);
-  font-weight: bold;
-}
-
-tr:nth-child(even) {
-  background-color: var(--table-row-bg);
-}
-
-tr:hover {
-  background-color: var(--table-hover-bg);
 }
 
 .title {
