@@ -1,0 +1,10 @@
+<div class="youtube">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/{{id}}{% if playlist %}?list={{playlist}}{% endif %}{% if autoplay %}?autoplay=1{% endif %}"
+    width="{% if width %}{{width}}{% else %} 480 {% endif %}"
+    height="{% if height %}{{height}}{% else %} 270 {% endif %}"
+    webkitallowfullscreen
+    mozallowfullscreen
+    allowfullscreen
+  ></iframe>
+</div>

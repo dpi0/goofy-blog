@@ -145,3 +145,18 @@ blockquote {
   color: var(--blockquote-text);
   font-style: italic;
 }
+// .youtube {
+//   position: relative;
+//   padding-bottom: 56.25%;
+//   height: 0;
+//   overflow-x: auto;
+//   overflow-y: hidden;
+//   // overflow: hidden;
+// }
+
+.youtube iframe {
+  margin: 1em 0;
+  border: 1px solid var(--bg-color);
+  border-radius: 5px;
+  box-shadow: 0 0 20px #ff000033;
+}
