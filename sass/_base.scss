@@ -125,3 +125,11 @@ figcaption {
   color: var(--accent);
   transition: color 0.2s, opacity 0.2s;
 }
+
+blockquote {
+  margin: 0 0 1rem;
+  padding: 0.2rem 1rem;
+  border-left: 5px solid var(--blockquote-border);
+  color: var(--blockquote-text);
+  font-style: italic;
+}

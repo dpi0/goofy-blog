@@ -13,6 +13,9 @@
   --table-border: #ddd;
 
   --permalink: #adadad;
+
+  --blockquote-border: #adadad;
+  --blockquote-text: #444;
 }
 
 [data-theme="dark"] {
@@ -29,4 +32,6 @@
   --table-border: #444;
 
   --permalink: #59595b;
+  --blockquote-border: #59595b;
+  --blockquote-text: #999;
 }
