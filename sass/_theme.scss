@@ -1,10 +1,10 @@
 :root {
   --bg-color: #fff;
   --text-color: #121212;
-  --link-color: #0000ff;
+  // --link-color: #0000ff;
   --sidebar-bg-color: lightpink;
   --content-bg-color: lightblue;
-  --accent: pink;
+  --accent: #0065d9;
   --icon-color: #121212;
 
   --table-header-bg: #e5e5e5;
@@ -16,12 +16,14 @@
 
   --blockquote-border: #adadad;
   --blockquote-text: #444;
+
+  --link-visited: #7c00c8;
 }
 
 [data-theme="dark"] {
   --bg-color: #121212;
   --text-color: #fff;
-  --link-color: #00ff00;
+  // --link-color: #00ff00;
   --sidebar-bg-color: darkslategray;
   --content-bg-color: darkcyan;
   --accent: #00ff00;
@@ -32,6 +34,9 @@
   --table-border: #444;
 
   --permalink: #59595b;
+
   --blockquote-border: #59595b;
   --blockquote-text: #999;
+
+  --link-visited: #c263ff;
 }

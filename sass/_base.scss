@@ -32,9 +32,21 @@ pre {
 }
 
 a {
-  color: var(--link-color);
+  color: var(--accent);
   text-decoration: none;
   overflow-wrap: break-word;
+}
+
+p a:hover,
+ul a:hover,
+li a:hover {
+  text-decoration: underline;
+}
+
+p a:visited,
+ul a:visited,
+li a:visited {
+  color: var(--link-visited);
 }
 
 strong {
