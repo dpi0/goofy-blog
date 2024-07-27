@@ -145,6 +145,7 @@ blockquote {
   color: var(--blockquote-text);
   font-style: italic;
 }
+
 // .youtube {
 //   position: relative;
 //   padding-bottom: 56.25%;
@@ -159,6 +160,16 @@ blockquote {
   border: 1px solid var(--bg-color);
   border-radius: 5px;
   box-shadow: 0 0 20px #ff000033;
+}
+
+::selection {
+  background-color: var(--accent);
+  color: var(--bg-color);
+}
+
+::-moz-selection {
+  background-color: var(--accent);
+  color: var(--bg-color);
 }
 
 details {
