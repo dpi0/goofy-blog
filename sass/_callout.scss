@@ -1,0 +1,55 @@
+@use "theme";
+
+.callout {
+  padding: 1em;
+  margin: 1em 0;
+  color: var(--text-color);
+}
+
+.callout-icon {
+  display: inline-block;
+  margin-right: 3px;
+  vertical-align: -7%;
+  width: 20px;
+  height: 20px;
+}
+
+.callout p {
+  margin: 0;
+}
+
+.warning {
+  background-color: var(--callout-warning-bg);
+  border-left: 4px solid var(--callout-warning);
+}
+
+.callout-icon.warning-icon path {
+  fill: var(--callout-warning);
+}
+
+.info {
+  background-color: var(--callout-info-bg);
+  border-left: 4px solid var(--callout-info);
+}
+
+.callout-icon.info-icon path {
+  fill: var(--callout-info);
+}
+
+.tip {
+  background-color: var(--callout-tip-bg);
+  border-left: 4px solid var(--callout-tip);
+}
+
+.callout-icon.tip-icon path {
+  fill: var(--callout-tip);
+}
+
+.danger {
+  background-color: var(--callout-danger-bg);
+  border-left: 4px solid var(--callout-danger);
+}
+
+.callout-icon.danger-icon path {
+  fill: var(--callout-danger);
+}
