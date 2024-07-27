@@ -29,6 +29,9 @@
   --callout-danger-bg: #ffe7ec;
 
   --expand: #121212;
+
+  --inline-code-fg: #0065d9;
+  --inline-code-bg: #eee;
 }
 
 [data-theme="dark"] {
@@ -61,4 +64,6 @@
   --callout-danger-bg: #540615;
 
   --expand: #999;
+  --inline-code-fg: #00ff00;
+  --inline-code-bg: #222;
 }
