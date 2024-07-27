@@ -34,5 +34,6 @@ anchors = "on"
 # index_format = "elasticlunr_javascript"
 
 [extra]
-# Put all your custom variables here
+katex_enable = true
+katex_auto_render = true
 index_title = "Homepage"
