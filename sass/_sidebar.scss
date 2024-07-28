@@ -6,26 +6,10 @@
   text-align: right;
 }
 
-.navbar {
-  display: none; // Hide navbar by default
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--accent);
-  padding: 0.5em;
-}
-
 .sidebar ul {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-.navbar-toggle {
-  font-size: 2em;
-  background: none;
-  border: none;
-  cursor: pointer;
-  margin-left: auto;
 }
 
 .theme-toggle {
@@ -37,7 +21,6 @@
   svg {
     width: 30px;
     height: 30px;
-    color: red;
     color: var(--icon-color);
   }
 }
@@ -54,41 +37,6 @@
   display: block;
 }
 
-@media (max-width: 768px) {
-  .navbar {
-    display: flex; // Show navbar on small screens
-  }
-
-  .sidebar {
-    display: none; // Hide sidebar by default on small screens
-    text-align: left;
-  }
-
-  .sidebar ul {
-    list-style: none;
-    padding: 0; /* Optional: to remove any default padding */
-    margin: 0; /* Optional: to remove any default margin */
-  }
-
-  .sidebar.show {
-    display: block; // Show sidebar when toggle is active
-    background-color: var(--accent);
-  }
-
-  .sidebar .title-logo {
-    display: none; // Hide logo in sidebar on small screens
-  }
-  .title-logo {
-    margin-top: 0rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .navbar {
-    display: none; // Hide navbar on larger screens
-  }
-
-  .sidebar .title-logo {
-    display: block; // Show logo in sidebar on larger screens
-  }
+.sidebar-content {
+  // background-color: red;
 }

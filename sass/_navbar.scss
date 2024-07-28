@@ -1,0 +1,87 @@
+.navbar {
+  display: none; // Hide navbar by default
+  align-items: center;
+  background-color: var(--accent);
+  padding: 0.7em;
+}
+
+.navbar-toggle {
+  font-size: 1.9em;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.theme-toggle-navbar {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+  svg {
+    width: 30px;
+    height: 30px;
+    color: var(--bg-color);
+  }
+  margin-left: auto; /* Send to the right */
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: flex; // Show navbar on small screens
+  }
+
+  .sidebar {
+    display: none; // Hide sidebar by default on small screens
+    text-align: left;
+  }
+
+  .sidebar ul {
+    list-style: none;
+    padding: 0; /* Optional: to remove any default padding */
+    margin: 0; /* Optional: to remove any default margin */
+  }
+
+  .sidebar a {
+    color: var(--bg-color);
+  }
+
+  .sidebar p::selection,
+  .sidebar a::selection {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+
+  .sidebar.show {
+    display: block; // Show sidebar when toggle is active
+    background-color: var(--accent);
+    color: var(--bg-color);
+    margin-top: -1.5rem;
+  }
+
+  .sidebar .title-logo {
+    display: none; // Hide logo in sidebar on small screens
+  }
+
+  .title-logo {
+    padding: 0;
+    margin-top: 0rem;
+  }
+
+  .navbar-toggle {
+    color: var(--bg-color);
+  }
+
+  .theme-toggle {
+    display: none; // Hide theme toggle in sidebar on small screens
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    display: none; // Hide navbar on larger screens
+  }
+
+  .sidebar .title-logo {
+    display: block; // Show logo in sidebar on larger screens
+  }
+}

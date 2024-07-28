@@ -1,6 +1,7 @@
-<nav>
+<div class="sidebar-content">
   {% set moon_icon = load_data(path="icon/moon.svg") %} {% set sun_icon =
   load_data(path="icon/sun.svg") %}
+
   <button
     id="theme-toggle"
     aria-label="theme switch"
@@ -16,9 +17,10 @@
     <li><a href="##">Mail</a></li>
     <li><a href="{{ get_url(path='page-1') | safe }}">Page 1</a></li>
   </ul>
+
   <p>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit at
     tempore, minus quisquam nemo blanditiis vitae repudiandae quis et porro ad
     corporis quo minima harum laboriosam provident culpa! Molestias, totam.
   </p>
-</nav>
+</div>
