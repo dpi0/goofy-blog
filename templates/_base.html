@@ -47,7 +47,12 @@
       crossorigin="anonymous"
       onload="renderMathInElement(document.body);"
     ></script>
-    {% endif %} {% endif %}
+    {% endif %} {% endif %} {% if config.extra.enablemermaid %}
+    <script type="module">
+      import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+    {% endif %}
     <script src="{{ get_url(path='js/main.js') | safe }}" defer></script>
   </head>
 
