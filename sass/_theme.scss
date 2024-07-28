@@ -32,6 +32,9 @@
 
   --inline-code-fg: #0065d9;
   --inline-code-bg: #eee;
+
+  --codeblock-lineno: #aaa;
+  --codeblock-lineno-highlight: #fff;
 }
 
 [data-theme="dark"] {
@@ -65,6 +68,10 @@
   --callout-danger-bg: #540615;
 
   --expand: #999;
+
   --inline-code-fg: #00ff00;
   --inline-code-bg: #222;
+
+  --codeblock-lineno: #aaa;
+  --codeblock-lineno-highlight: #fff;
 }

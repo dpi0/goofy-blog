@@ -1,9 +1,39 @@
-@use "theme";
-
 :is(p, li, ul, a, td, th, h1, h2, h3, h4, h5, h6) > code {
   background-color: var(--inline-code-bg);
   color: var(--inline-code-fg);
   border-radius: 3px;
   padding: 2px 4px;
   font-size: 90%;
+}
+
+pre {
+  padding: 1rem;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  border-radius: 0.2rem;
+}
+
+pre table td:nth-of-type(1) {
+  text-align: center;
+  user-select: none;
+  color: var(--codeblock-lineno);
+}
+
+pre[data-linenos] {
+  padding: 1rem 0.5rem;
+}
+
+pre table td {
+  padding: 0;
+}
+
+pre mark {
+  display: block;
+  // background-color: rgba(254, 252, 0, 0.9); # doesn't work with a predefined color scheme
+  color: var(--codeblock-lineno-highlight);
+}
+
+pre table {
+  width: 100%;
+  border-collapse: collapse;
 }
