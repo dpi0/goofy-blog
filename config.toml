@@ -37,4 +37,4 @@ anchors = "on"
 katex_enable = false
 katex_auto_render = false
 index_title = "Homepage"
-enablemermaid = true
+enablemermaid = false

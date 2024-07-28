@@ -7,15 +7,30 @@ function initializeThemeToggle() {
     updateIcon(currentTheme);
     updateFavicon(currentTheme);
 
-    toggleButton.addEventListener("click", function () {
-      const currentTheme = document.documentElement.getAttribute("data-theme");
-      const newTheme = currentTheme === "light" ? "dark" : "light";
-      document.documentElement.setAttribute("data-theme", newTheme);
-      localStorage.setItem("theme", newTheme);
-      updateIcon(newTheme);
-      updateFavicon(newTheme);
+    toggleButton.addEventListener("click", toggleTheme);
+
+    // Add event listener for key presses
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "s") {
+        toggleTheme();
+      } else if (event.key === "h") {
+        navigateToRoot();
+      }
     });
   });
+
+  function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute("data-theme");
+    const newTheme = currentTheme === "light" ? "dark" : "light";
+    document.documentElement.setAttribute("data-theme", newTheme);
+    localStorage.setItem("theme", newTheme);
+    updateIcon(newTheme);
+    updateFavicon(newTheme);
+  }
+
+  function navigateToRoot() {
+    window.location.href = "/";
+  }
 
   function updateIcon(theme) {
     const toggleButton = document.getElementById("theme-toggle");
@@ -23,7 +38,9 @@ function initializeThemeToggle() {
     const sunIcon = toggleButton.getAttribute("data-sun-icon");
     toggleButton.innerHTML = theme === "light" ? moonIcon : sunIcon;
     toggleButton.title =
-      theme === "light" ? "Switch to Dark mode" : "Switch to Light mode";
+      theme === "light"
+        ? "Switch to Dark mode (or press 's')"
+        : "Switch to Light mode (or press 's')";
   }
 
   function updateFavicon(theme) {
