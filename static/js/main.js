@@ -41,22 +41,49 @@ function enableThemeToggle() {
   function navigateToRoot() {
     window.location.href = "/";
   }
+function enableThemeToggleNavbar() {
+  // Wait for DOM content to load
+  document.addEventListener("DOMContentLoaded", () => {
+    // Get theme toggle button and current theme
+    const toggleButton = document.getElementById("theme-toggle-navbar");
+    const currentTheme = localStorage.getItem("theme") || "light";
 
-  function updateIcon(theme) {
-    const toggleButton = document.getElementById("theme-toggle");
-    const moonIcon = toggleButton.getAttribute("data-moon-icon");
-    const sunIcon = toggleButton.getAttribute("data-sun-icon");
-    toggleButton.innerHTML = theme === "light" ? moonIcon : sunIcon;
-    toggleButton.title =
-      theme === "light"
-        ? "Switch to Dark mode (or press 's')"
-        : "Switch to Light mode (or press 's')";
+    // Initialize theme
+    initTheme(currentTheme);
+
+    // Add event listener to toggle button
+    toggleButton.addEventListener("click", toggleTheme);
+  });
+
+  // Initialize theme
+  function initTheme(theme) {
+    document.documentElement.setAttribute("data-theme", theme);
+    updateIcon(theme);
+    updateFavicon(theme);
   }
 
+  // Toggle theme
+  function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute("data-theme");
+    const newTheme = currentTheme === "light" ? "dark" : "light";
+    initTheme(newTheme);
+    localStorage.setItem("theme", newTheme);
+  }
+
+  // Update theme icon
+  function updateIcon(theme) {
+    const toggleButton = document.getElementById("theme-toggle-navbar");
+    const iconMap = {
+      light: toggleButton.getAttribute("data-moon-icon"),
+      dark: toggleButton.getAttribute("data-sun-icon"),
+    };
+    toggleButton.innerHTML = iconMap[theme];
+  }
+
+  // Update favicon
   function updateFavicon(theme) {
     const favicon = document.getElementById("favicon");
-    favicon.href =
-      theme === "light" ? "/favicon-light.ico" : "/favicon-dark.ico";
+    favicon.href = `/favicon-${theme}.ico`;
   }
 }
 
@@ -71,7 +98,7 @@ function enableNavBarDropdown() {
   });
 }
 
-function headerPermalink() {
+function enableHeaderPermalink() {
   document.addEventListener("DOMContentLoaded", function () {
     const headers = document.querySelectorAll("h1, h2, h3");
 
@@ -92,6 +119,8 @@ function headerPermalink() {
 
 //--------------------------------------------
 
-initializeThemeToggle();
+enableThemeToggle();
+enableThemeToggleNavbar();
 enableNavBarDropdown();
-headerPermalink();
+enableHeaderPermalink();
+enableKeyBinds();

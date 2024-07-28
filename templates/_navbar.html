@@ -2,5 +2,17 @@
   <a href="{{ get_url(path='/') | safe }}"
     ><div class="title-logo">Your Logo Here</div></a
   >
+  {% set moon_icon = load_data(path="icon/moon.svg") %} {% set sun_icon =
+  load_data(path="icon/sun.svg") %}
+
+  <button
+    id="theme-toggle-navbar"
+    aria-label="theme switch"
+    data-moon-icon="{{ moon_icon }}"
+    data-sun-icon="{{ sun_icon }}"
+    class="theme-toggle-navbar"
+  >
+    {{ moon_icon | safe }}
+  </button>
   <button id="navbar-toggle" class="navbar-toggle">☰</button>
 </nav>

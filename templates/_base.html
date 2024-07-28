@@ -87,6 +87,15 @@
         const sunIcon = toggleButton.getAttribute("data-sun-icon");
         toggleButton.innerHTML = currentTheme === "light" ? moonIcon : sunIcon;
 
+        // Prevent theme icon flicker in navbar
+        const toggleButtonNavbar = document.getElementById(
+          "theme-toggle-navbar"
+        );
+        const moonIconNavbar = toggleButton.getAttribute("data-moon-icon");
+        const sunIconNavbar = toggleButton.getAttribute("data-sun-icon");
+        toggleButtonNavbar.innerHTML =
+          currentTheme === "light" ? moonIcon : sunIcon;
+
         // Prevent favicon flicker
         const favicon = document.getElementById("favicon");
         favicon.href =
