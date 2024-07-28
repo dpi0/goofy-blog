@@ -1,0 +1,20 @@
+<table class="table-shortcode">
+  {% set rows = body | split(pat="\n") %} {% if rows | length > 0 %}
+  <thead>
+    <tr>
+      {% for cell in rows[0] | split(pat=",") %}
+      <th>{{ cell | safe }}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in rows | slice(start=1) %}
+    <tr>
+      {% for cell in row | split(pat=",") %}
+      <td>{{ cell | safe }}</td>
+      {% endfor %}
+    </tr>
+    {% endfor %}
+  </tbody>
+  {% endif %}
+</table>
