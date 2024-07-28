@@ -1,33 +1,43 @@
-function initializeThemeToggle() {
-  document.addEventListener("DOMContentLoaded", function () {
+// Enable theme toggle
+function enableThemeToggle() {
+  document.addEventListener("DOMContentLoaded", () => {
     const toggleButton = document.getElementById("theme-toggle");
     const currentTheme = localStorage.getItem("theme") || "light";
 
-    document.documentElement.setAttribute("data-theme", currentTheme);
-    updateIcon(currentTheme);
-    updateFavicon(currentTheme);
-
+    initTheme(currentTheme);
     toggleButton.addEventListener("click", toggleTheme);
-
-    // Add event listener for key presses
-    document.addEventListener("keydown", function (event) {
-      if (event.key === "s") {
-        toggleTheme();
-      } else if (event.key === "h") {
-        navigateToRoot();
-      }
-    });
   });
+
+  function initTheme(theme) {
+    document.documentElement.setAttribute("data-theme", theme);
+    updateIcon(theme);
+    updateFavicon(theme);
+  }
 
   function toggleTheme() {
     const currentTheme = document.documentElement.getAttribute("data-theme");
     const newTheme = currentTheme === "light" ? "dark" : "light";
-    document.documentElement.setAttribute("data-theme", newTheme);
+    initTheme(newTheme);
     localStorage.setItem("theme", newTheme);
-    updateIcon(newTheme);
-    updateFavicon(newTheme);
   }
 
+  function updateIcon(theme) {
+    const toggleButton = document.getElementById("theme-toggle");
+    const iconMap = {
+      light: toggleButton.getAttribute("data-moon-icon"),
+      dark: toggleButton.getAttribute("data-sun-icon"),
+    };
+    toggleButton.innerHTML = iconMap[theme];
+    toggleButton.title = `Switch to ${
+      theme === "light" ? "Dark" : "Light"
+    } mode (or press 's')`;
+  }
+
+  function updateFavicon(theme) {
+    const favicon = document.getElementById("favicon");
+    favicon.href = `/favicon-${theme}.ico`;
+  }
+}
   function navigateToRoot() {
     window.location.href = "/";
   }
