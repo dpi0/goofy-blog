@@ -38,9 +38,30 @@ function enableThemeToggle() {
     favicon.href = `/favicon-${theme}.ico`;
   }
 }
+
+// Handle key presses
+function enableKeyBinds() {
+  document.addEventListener("keydown", (event) => {
+    switch (event.key) {
+      case "s":
+        toggleTheme();
+        break;
+      case "h":
+        navigateToRoot();
+        break;
+    }
+  });
+
+  function toggleTheme() {
+    const themeToggle = document.getElementById("theme-toggle");
+    themeToggle.click();
+  }
+
   function navigateToRoot() {
     window.location.href = "/";
   }
+}
+
 function enableThemeToggleNavbar() {
   // Wait for DOM content to load
   document.addEventListener("DOMContentLoaded", () => {
