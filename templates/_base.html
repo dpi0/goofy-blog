@@ -64,7 +64,7 @@
           <a
             href="{{ get_url(path='/') | safe }}"
             title="Go to home (or press 'h')"
-            ><div class="title-logo">Your Logo Here</div></a
+            ><div class="title-logo">{{config.extra.logo}}</div></a
           >
           {% include "_sidebar.html" %}
         </section>

@@ -14,7 +14,7 @@
 
 .theme-toggle {
   padding: 0;
-  margin-top: 1em;
+  margin-top: 1.5em;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -27,7 +27,7 @@
 
 .title-logo {
   background-color: var(--accent);
-  font-size: 1.7em;
+  font-size: 1.9em;
   color: var(--bg-color);
   font-weight: bold;
   text-decoration: none;
@@ -39,4 +39,74 @@
 
 .sidebar-content {
   // background-color: red;
+}
+
+.about-me-sidebar {
+  // background-color: red;
+  padding-top: 0.5em;
+}
+
+.about-me-sidebar span {
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: var(--accent);
+  color: var(--bg-color);
+  padding-top: 0.2em;
+  padding-bottom: 0.1em;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  border-radius: 0.2em;
+}
+
+.about-me-sidebar p {
+  font-size: 0.9em;
+}
+
+.links-sidebar {
+  padding-top: 0.5em;
+}
+
+.links-sidebar li {
+  padding-bottom: 0.5em;
+}
+
+// .links-sidebar ul li a {
+//   background-color: var(--accent);
+//   color: var(--bg-color);
+//   padding: 0.2em;
+//   border-radius: 0.2em;
+//   font-weight: bo;
+// }
+
+.social-links-sidebar svg {
+  fill: var(--accent);
+  width: 24px;
+  height: 24px;
+  padding-left: 0.2em;
+}
+
+@media (max-width: 768px) {
+  .links-sidebar {
+    padding-top: 0;
+  }
+
+  .social-links-sidebar svg {
+    fill: var(--bg-color);
+  }
+
+  .links-sidebar a {
+    font-weight: bold;
+  }
+
+  .about-me-sidebar span {
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: var(--bg-color);
+    color: var(--accent);
+    padding-top: 0.2em;
+    padding-bottom: 0.1em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    border-radius: 0.2em;
+  }
 }

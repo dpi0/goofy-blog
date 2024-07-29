@@ -38,3 +38,4 @@ katex_enable = false
 katex_auto_render = false
 index_title = "Posts"
 enablemermaid = false
+logo = "Definitely not A.I."
