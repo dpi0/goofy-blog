@@ -228,3 +228,12 @@ details > summary span {
     justify-content: space-between;
   }
 }
+
+.index-post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.index-post-list li {
+  padding-bottom: 0.5em;
+}

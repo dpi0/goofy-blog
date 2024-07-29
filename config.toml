@@ -36,5 +36,5 @@ anchors = "on"
 [extra]
 katex_enable = false
 katex_auto_render = false
-index_title = "Homepage"
+index_title = "Posts"
 enablemermaid = false
