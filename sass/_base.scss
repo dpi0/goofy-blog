@@ -153,3 +153,25 @@ details {
 details > summary span {
   margin-left: 0.25em;
 }
+
+#backToTop {
+  position: fixed;
+  display: none;
+  bottom: 20px;
+  right: 20px;
+  padding: 0.2em;
+  background-color: var(--back-to-top-bg);
+  border: none;
+  font-weight: bold;
+  border-radius: 0.2em;
+  cursor: pointer;
+}
+
+.backToTop {
+  width: 30px;
+  height: 30px;
+}
+
+.backToTop path {
+  fill: var(--back-to-top-fg);
+}
