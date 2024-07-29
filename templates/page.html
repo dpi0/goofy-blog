@@ -35,4 +35,31 @@ if page.updated %}
 <p class="post-date">
   Originally posted on: {{ page.date | date(format="%a %d %B, %Y") }}
 </p>
-{% endif %}{% include "_footer.html" %} {% endblock content %}
+{% endif %} {# below are called unicode icons full list available here:
+https://symbl.cc/en/unicode-table/#arrows#}<!-- Default text on large screens-->
+<div class="next-prev-post next-prev-container default-text">
+  {% if page.lower %}
+  <a class="previous page-button" href="{{ page.lower.permalink }}"
+    >← <strong>{{ page.lower.title }}</strong></a
+  >
+  {% endif %} {% if page.higher %}
+  <a class="next page-button" href="{{ page.higher.permalink }}"
+    ><strong>{{ page.higher.title }}</strong> →</a
+  >
+  {% endif %}
+</div>
+
+<!-- Alternative text for small screens -->
+<div class="next-prev-post next-prev-container small-screen-text">
+  {% if page.lower %}
+  <a class="previous page-button" href="{{ page.lower.permalink }}"
+    ><strong>← Previous Post</strong></a
+  >
+  {% endif %} {% if page.higher %}
+  <a class="next page-button" href="{{ page.higher.permalink }}"
+    ><strong>Next Post →</strong></a
+  >
+  {% endif %}
+</div>
+
+{% include "_footer.html" %} {% endblock content %}

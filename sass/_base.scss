@@ -186,3 +186,45 @@ details > summary span {
   border: 3px dotted var(--accent);
   border-radius: 0.4em;
 }
+
+.next-prev-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+}
+
+.previous {
+  margin-right: auto;
+}
+
+.next {
+  margin-left: auto;
+}
+
+.page-button {
+  background-color: var(--accent);
+  color: var(--bg-color);
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  border-radius: 0.4em;
+}
+
+/* Hide alternative text by default */
+.small-screen-text {
+  display: none;
+}
+
+/* Hide default text and show alternative text on small screens */
+@media (max-width: 768px) {
+  .default-text {
+    display: none;
+  }
+  .small-screen-text {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+  }
+}
