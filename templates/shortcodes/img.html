@@ -1,6 +1,28 @@
 <figure>
   <a href="{{ src }}" target="_blank">
-    <img src="{{ src }}" alt="{{ alt }}" class="pure-img" />
+    <img
+      src="{{ src }}"
+      {%
+      if
+      caption
+      %}
+      title="{{ caption }}"
+      {%
+      endif
+      %}
+      {%
+      if
+      border
+      %}
+      class="pure-img img-border"
+      {%
+      else
+      %}
+      class="pure-img"
+      {%
+      endif
+      %}
+    />
   </a>
   {% if caption %}
   <figcaption>{{ caption }}</figcaption>
