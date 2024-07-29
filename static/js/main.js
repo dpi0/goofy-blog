@@ -44,10 +44,39 @@ function enableKeyBinds() {
   document.addEventListener("keydown", (event) => {
     switch (event.key) {
       case "s":
-        toggleTheme();
+        if (!event.shiftKey) {
+          toggleTheme();
+        }
+        break;
+      case "j":
+        window.scrollBy(0, 100); // scroll down by 100px
+        break;
+      case "k":
+        window.scrollBy(0, -100); // scroll up by 100px
         break;
       case "h":
-        navigateToRoot();
+        history.back();
+        break;
+      case "l":
+        history.forward();
+        break;
+      case "ArrowLeft":
+        history.back();
+        break;
+      case "ArrowRight":
+        history.forward();
+        break;
+      case "p":
+        window.scrollTo(0, 0); // scroll to top
+        break;
+      case "n":
+        window.scrollTo(0, document.body.scrollHeight); // scroll to bottom
+        break;
+      case "g":
+        window.location.href = "/"; // go to root
+        break;
+      case "r":
+        window.location.reload(); // refresh the page
         break;
     }
   });
@@ -55,10 +84,6 @@ function enableKeyBinds() {
   function toggleTheme() {
     const themeToggle = document.getElementById("theme-toggle");
     themeToggle.click();
-  }
-
-  function navigateToRoot() {
-    window.location.href = "/";
   }
 }
 
