@@ -62,9 +62,23 @@ hr {
   font-size: 2em;
 }
 
-.date {
+// .title-background {
+//   background-color: var(--accent);
+//   color: var(--bg-color);
+//   padding: 0.2em;
+//   border-radius: 0.2em;
+// }
+
+// .date-background {
+//   background-color: #6361d2;
+//   color: var(--bg-color);
+//   padding: 0.2em;
+//   border-radius: 0.2em;
+// }
+
+.post-date {
   font-weight: 1000;
-  // background-color: red;
+  color: var(--post-date);
 }
 
 figcaption {
