@@ -276,3 +276,11 @@ a.external::after {
   font-size: 0.8em; /* Adjust icon size relative to the text */
   vertical-align: middle; /* Align the icon with the text */
 }
+
+mark {
+  background-color: gold;
+  color: black;
+  padding: 0.1em;
+  border-radius: 0.2em;
+  font-weight: bold;
+}
