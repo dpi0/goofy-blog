@@ -1,14 +1,16 @@
 {% extends "_base.html" %} {% block title %}{{config.extra.index_title}}{%
 endblock title %} {% block content %}
 
-<h1 class="title">{{config.extra.index_title}}</h1>
+<h1 class="title">
+  <span class="title-background">{{config.extra.index_title}}</span>
+</h1>
 
 {# {{ section.content | safe }} #}
 
 <ul class="index-post-list">
   {% for page in section.pages %}
 
-  <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+  <li><a href="{{ page.permalink | safe }}">→ {{ page.title }}</a></li>
   {% endfor %}
 </ul>
 

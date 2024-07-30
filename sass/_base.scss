@@ -1,8 +1,9 @@
 body {
   background-color: var(--bg-color);
-  font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: var(--text-color);
   font-size: 1.2em;
+  line-height: normal;
 }
 
 .blog {
@@ -62,19 +63,20 @@ hr {
   font-size: 2em;
 }
 
-// .title-background {
-//   background-color: var(--accent);
-//   color: var(--bg-color);
-//   padding: 0.2em;
-//   border-radius: 0.2em;
-// }
+.title-background {
+  background-color: var(--accent);
+  color: var(--bg-color);
+  padding: 0.2em;
+  border-radius: 0.2em;
+  display: inline-block;
+}
 
-// .date-background {
-//   background-color: #6361d2;
-//   color: var(--bg-color);
-//   padding: 0.2em;
-//   border-radius: 0.2em;
-// }
+.date-background {
+  background-color: var(--date-background);
+  color: var(--bg-color);
+  padding: 0.2em;
+  border-radius: 0.2em;
+}
 
 .post-date {
   font-weight: 1000;
@@ -236,6 +238,12 @@ details > summary span {
 
 .index-post-list li {
   padding-bottom: 0.5em;
+}
+
+.index-post-list li a {
+  font-size: 1.2em;
+  font-weight: bold;
+  // text-decoration: underline;
 }
 
 h1 span.heading-text {
