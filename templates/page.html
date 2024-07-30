@@ -5,15 +5,6 @@
 {% block title %}{{page.title}}{% endblock title %}
 
 <!-- after this, the actual content to be displayed starts -->
-{% block content %} {#
-<div class="breadcrumbs">
-  <a href="{{ config.base_url }}">Home</a>&nbsp;»&nbsp;
-  <!-- <a href="{{ get_url(path='@/_index.md') }}">Home</a>&nbsp;»&nbsp; -->
-  <a href="{{ page.permalink }}">{{ page.title }}</a>
-</div>
-#} {#
-<h1 class="title"><span class="title-background">{{ page.title }}</span></h1>
-#}
 <h1 class="title"><span class="title-background">{{ page.title }}</span></h1>
 
 <button id="backToTop">
