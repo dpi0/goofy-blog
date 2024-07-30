@@ -5,11 +5,9 @@
 {% block title %}{{page.title}}{% endblock title %}
 
 <!-- after this, the actual content to be displayed starts -->
-{% block content %}
-
 <h1 class="title"><span class="title-background">{{ page.title }}</span></h1>
 
-<button id="backToTop" title="Go back to top (or press 'p')">
+<button id="backToTop">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="backToTop">
     <path
       d="M18.78 15.78a.749.749 0 0 1-1.06 0L12 10.061 6.28 15.78a.749.749 0 1 1-1.06-1.06l6.25-6.25a.749.749 0 0 1 1.06 0l6.25 6.25a.749.749 0 0 1 0 1.06Z"
@@ -20,16 +18,10 @@
 {# if updated date present, then display that. if not, show original date #} {%
 if page.updated %}
 <p class="post-date">
-  <span class="date-background"
-    >Updated: {{ page.updated | date(format="%a %d %B, %Y") }}</span
-  >
+  Updated: {{ page.updated | date(format="%a %d %B, %Y") }}
 </p>
 {% else %}
-<p class="post-date">
-  <span class="date-background"
-    >{{ page.date | date(format="%a %d %B, %Y") }}</span
-  >
-</p>
+<p class="post-date">{{ page.date | date(format="%a %d %B, %Y") }}</p>
 {% endif %} {{ page.content | safe }} {% if page.updated %}
 <p class="post-date">
   Originally posted on: {{ page.date | date(format="%a %d %B, %Y") }}
