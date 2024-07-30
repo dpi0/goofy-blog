@@ -1,6 +1,7 @@
 +++
 title = "Homepage"
 page_template = "page.html"
+sort_by = "update_date"
 +++
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
