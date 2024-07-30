@@ -5,13 +5,11 @@ title %} {% block content %}
   <span class="title-background">{{config.extra.index_title}}</span>
 </h1>
 
-{# {{ section.content | safe }} #}
-
 <ul class="index-post-list">
-  {% for page in section.pages %}
-
+  {% set excluded_titles = ["Projects", "About Me"] %} {% for page in
+  section.pages %} {% if page.title not in excluded_titles %}
   <li><a href="{{ page.permalink | safe }}">→ {{ page.title }}</a></li>
-  {% endfor %}
+  {% endif %} {% endfor %}
 </ul>
 
 {% endblock content %}
