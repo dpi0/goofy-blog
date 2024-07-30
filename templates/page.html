@@ -2,7 +2,7 @@
 
 <!-- this is outside of content block -->
 <!-- this sends the title answer to _base.html's title block -->
-{% block title %}{{page.title}}{% endblock title %}
+{% block title %}{{page.title}} | {{config.extra.logo}} {% endblock title %}
 
 <!-- after this, the actual content to be displayed starts -->
 
