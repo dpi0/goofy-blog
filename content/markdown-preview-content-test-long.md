@@ -399,11 +399,12 @@ end
 
 ### Small image
 
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
+{{ img(src="https://github.githubassets.com/images/icons/emoji/octocat.png
+", caption="Github Logo") }}
 
 ### Large image
 
-{{ img(src="https://docs.github.com/assets/cb-23923/mw-1440/images/help/repository/branching.webp", alt="A description of the image") }}
+{{ img(src="https://docs.github.com/assets/cb-23923/mw-1440/images/help/repository/branching.webp", caption="Github branching showcased rather nicely", border=true) }}
 
 ### Definition lists can be used with HTML syntax
 
@@ -439,6 +440,36 @@ Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit. Pellentesque vel la
 ##### Sample heading 5
 
 ###### Sample heading 6
+
+# Sample heading 1
+
+## Sample heading 2
+
+## Sample heading 2
+
+## Sample heading 2
+
+### Sample heading 3
+
+#### Sample heading 4
+
+#### Sample heading 4
+
+##### Sample heading 5
+
+###### Sample heading 6
+
+# Sample `heading 1`
+
+## `Sample` heading 2
+
+### Sample `heading` 3
+
+#### `Sample heading 4`
+
+##### Sample `heading 5`
+
+###### Sample `heading` 6
 
 Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Etiam id nisl ut lorem gravida euismod.
 
@@ -486,6 +517,17 @@ And here is some `inline code`!
 | ---------- | :-------------: | ----: |
 | col 3 is   | `right-aligned` | $1600 |
 | `col 2 is` |    centered     |   $12 |
+
+{% table() %}
+header1, header2, header3, header4, header5
+data1, data2, data3, data10, data11
+data3, data4, data6, data12, data13
+data7, data8, data9, data14, data15
+data16, data17, data18, data19, data20
+data21, data22, data23, data24, data25
+data26, data27, data28, data29, data30
+data31, data32, data33, data34, data35
+{% end %}
 
 # `heading 1` inline code
 
