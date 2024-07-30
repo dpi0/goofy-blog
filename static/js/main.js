@@ -146,18 +146,30 @@ function enableNavBarDropdown() {
 
 function enableHeaderPermalink() {
   document.addEventListener("DOMContentLoaded", function () {
-    const headers = document.querySelectorAll("h1, h2, h3");
+    const headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
 
     headers.forEach((header) => {
+      // Skip headers with the class "title"
+      if (header.classList.contains("title")) {
+        return;
+      }
+
       const id = header.id;
-      if (id) {
+      if (id && ["h1", "h2", "h3"].includes(header.tagName.toLowerCase())) {
+        const text = header.innerHTML;
         const link = document.createElement("a");
         link.href = `#${id}`;
         link.className = "header-permalink";
         link.innerHTML = "#";
         link.setAttribute("title", "Permanent Link");
+
+        // Clear the header content and rebuild it with span and link
+        header.innerHTML = `<span class="heading-text">${text}</span>`;
         header.appendChild(link);
         header.classList.add("header-with-permalink");
+      } else {
+        // Wrap the text content in a span for h4, h5, h6
+        header.innerHTML = `<span class="heading-text">${header.innerHTML}</span>`;
       }
     });
   });

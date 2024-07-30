@@ -249,3 +249,59 @@ details > summary span {
 .index-post-list li {
   padding-bottom: 0.5em;
 }
+
+h1 span.heading-text {
+  display: inline-block;
+  background-color: var(--h1-bg); /* Change this to your desired color */
+  padding: 0.2em; /* Optional: Adjust padding to add some space around the text */
+  border-radius: 0.2em;
+  color: var(--bg-color);
+}
+
+h2 span.heading-text {
+  display: inline-block;
+  background-color: var(--h2-bg); /* Change this to your desired color */
+  padding: 0.2em; /* Optional: Adjust padding to add some space around the text */
+  border-radius: 0.2em;
+  color: var(--bg-color);
+}
+
+h3 span.heading-text {
+  display: inline-block;
+  background-color: var(--h3-bg); /* Change this to your desired color */
+  padding: 0.2em; /* Optional: Adjust padding to add some space around the text */
+  border-radius: 0.2em;
+  color: var(--bg-color);
+}
+
+h4 span.heading-text {
+  display: inline-block;
+  background-color: var(--h4-bg); /* Change this to your desired color */
+  padding: 0.2em; /* Optional: Adjust padding to add some space around the text */
+  border-radius: 0.2em;
+  color: var(--bg-color);
+}
+
+h5 span.heading-text {
+  display: inline-block;
+  background-color: var(--h5-bg); /* Change this to your desired color */
+  padding: 0.2em; /* Optional: Adjust padding to add some space around the text */
+  border-radius: 0.2em;
+  color: var(--bg-color);
+}
+
+h6 span.heading-text {
+  display: inline-block;
+  background-color: var(--h6-bg); /* Change this to your desired color */
+  padding: 0.2em; /* Optional: Adjust padding to add some space around the text */
+  border-radius: 0.2em;
+  color: var(--bg-color);
+}
+
+h4 > code,
+h5 > code,
+h6 > code {
+  background-color: var(--bg-color);
+  border-radius: 0.2em;
+  color: var(--text-color);
+}
