@@ -567,3 +567,5 @@ random image of a dog[^4]
 <a class="external" href="https://example.org">External link</a>
 
 You know what? I’m gonna say some <mark>very important</mark> stuff, so <mark>important</mark> that even bold is not enough.
+
+<del>Something deleted</del> <ins>Something added</ins>

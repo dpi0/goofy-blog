@@ -278,9 +278,33 @@ a.external::after {
 }
 
 mark {
+  // background-color: #331600;
   background-color: gold;
+  // color: #ffc04b;
   color: black;
-  padding: 0.1em;
+  padding: 0.2em;
   border-radius: 0.2em;
   font-weight: bold;
+}
+
+del {
+  background-color: #1f0901;
+  color: #fe6b57;
+  padding: 0.2em;
+  border-radius: 0.2em;
+}
+
+del,
+s {
+  text-decoration: line-through;
+  text-decoration-color: #fe6b57;
+  text-decoration-thickness: 2px;
+  text-decoration-style: solid;
+}
+
+ins {
+  background-color: #101305;
+  color: #95ffb3;
+  padding: 0.2em;
+  border-radius: 0.2em;
 }
