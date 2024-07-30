@@ -249,18 +249,30 @@ details > summary span {
 h1 {
   color: var(--h1-fg);
 }
+
 h2 {
   color: var(--h2-fg);
 }
+
 h3 {
   color: var(--h3-fg);
 }
+
 h4 {
   color: var(--h4-fg);
 }
+
 h5 {
   color: var(--h5-fg);
 }
+
 h6 {
   color: var(--h6-fg);
+}
+
+a.external::after {
+  content: "↗"; /* Unicode for the external link icon */
+  margin-left: 0.3em; /* Space between the link text and the icon */
+  font-size: 0.8em; /* Adjust icon size relative to the text */
+  vertical-align: middle; /* Align the icon with the text */
 }

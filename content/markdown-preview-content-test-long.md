@@ -563,3 +563,5 @@ random image of a dog[^4]
 [^2]: hey there
 [^3]: this is another footnote.
 [^4]: this is a very very long footnote to test if a very very long footnote brings some problems or not. I strongly hope that there are no problems but you know sometimes problems arise from nowhere.
+
+<a class="external" href="https://example.org">External link</a>
