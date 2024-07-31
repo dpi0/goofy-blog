@@ -52,6 +52,8 @@
       import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
       mermaid.initialize({ startOnLoad: true });
     </script>
+    {% endif %} {% if config.extra.enable_lightsense_img_zoom %}
+    <script src=" https://cdn.jsdelivr.net/npm/lightense-images@1.0.17/dist/lightense.min.js "></script>
     {% endif %}
     <script src="{{ get_url(path='js/main.js') | safe }}" defer></script>
   </head>
@@ -104,6 +106,10 @@
             ? "{{ get_url(path='favicon-light.ico') | safe }}"
             : "{{ get_url(path='favicon-dark.ico') | safe }}";
       })();
+
+      document.addEventListener("DOMContentLoaded", function () {
+        Lightense("img.lightense");
+      });
     </script>
   </body>
 </html>

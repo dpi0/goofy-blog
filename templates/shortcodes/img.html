@@ -1,29 +1,27 @@
 <figure>
-  <a href="{{ src }}" target="_blank">
-    <img
-      src="{{ src }}"
-      {%
-      if
-      caption
-      %}
-      title="{{ caption }}"
-      {%
-      endif
-      %}
-      {%
-      if
-      border
-      %}
-      class="pure-img img-border"
-      {%
-      else
-      %}
-      class="pure-img"
-      {%
-      endif
-      %}
-    />
-  </a>
+  <img
+    src="{{ src }}"
+    {%
+    if
+    caption
+    %}
+    title="{{ caption }}"
+    {%
+    endif
+    %}
+    {%
+    if
+    border
+    %}
+    class="pure-img img-border lightense"
+    {%
+    else
+    %}
+    class="pure-img lightense"
+    {%
+    endif
+    %}
+  />
   {% if caption %}
   <figcaption>{{ caption }}</figcaption>
   {% endif %}
