@@ -1,7 +1,7 @@
 # https://www.getzola.org/documentation/getting-started/configuration/
 
 # The URL the site will be built for
-base_url = "https://blog-dpi0.pages.dev/"
+base_url = "https://blog.dpi0.cloud/"
 
 default_language = "en"
 
