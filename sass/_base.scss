@@ -3,7 +3,14 @@ body {
   font: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: var(--text-color);
   font-size: 1.2em;
-  line-height: normal;
+}
+
+body p {
+  line-height: 1.7em;
+}
+
+ul {
+  line-height: 1.5em;
 }
 
 .blog {
@@ -38,6 +45,16 @@ li a:hover {
 
 strong {
   overflow-wrap: break-word;
+  color: #950028;
+}
+
+em {
+  overflow-wrap: break-word;
+  color: #026a3d;
+}
+
+.page-button strong {
+  color: var(--bg-color);
 }
 
 @media (max-width: 768px) {
@@ -276,25 +293,25 @@ h6 {
 }
 
 a.external::after {
-  content: "↗"; /* Unicode for the external link icon */
-  margin-left: 0.3em; /* Space between the link text and the icon */
-  font-size: 0.8em; /* Adjust icon size relative to the text */
-  vertical-align: middle; /* Align the icon with the text */
+  content: "↗";
+  margin-left: 0.3em;
+  font-size: 0.8em;
+  vertical-align: middle;
+  text-decoration: none;
 }
 
 mark {
-  // background-color: #331600;
-  background-color: gold;
-  // color: #ffc04b;
-  color: black;
-  padding: 0.2em;
+  background-color: var(--mark-bg);
+  color: var(--mark-fg);
+  padding: 0.12em;
   border-radius: 0.2em;
+  overflow-wrap: break-word;
   font-weight: bold;
 }
 
 del {
-  background-color: #1f0901;
-  color: #fe6b57;
+  background-color: var(--bg-color);
+  color: var(--del-fg);
   padding: 0.2em;
   border-radius: 0.2em;
 }
@@ -302,14 +319,14 @@ del {
 del,
 s {
   text-decoration: line-through;
-  text-decoration-color: #fe6b57;
+  text-decoration-color: var(--del-fg);
   text-decoration-thickness: 2px;
   text-decoration-style: solid;
 }
 
 ins {
-  background-color: #101305;
-  color: #95ffb3;
+  background-color: var(--bg-color);
+  color: var(--ins-fg);
   padding: 0.2em;
   border-radius: 0.2em;
 }
