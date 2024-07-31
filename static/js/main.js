@@ -54,18 +54,18 @@ function enableKeyBinds() {
       case "k":
         window.scrollBy(0, -100); // scroll up by 100px
         break;
-      case "h":
-        history.back();
-        break;
-      case "l":
-        history.forward();
-        break;
-      case "ArrowLeft":
-        history.back();
-        break;
-      case "ArrowRight":
-        history.forward();
-        break;
+      // case "h":
+      //   history.back();
+      //   break;
+      // case "l":
+      //   history.forward();
+      //   break;
+      // case "ArrowLeft":
+      //   history.back();
+      //   break;
+      // case "ArrowRight":
+      //   history.forward();
+      //   break;
       case "p":
         window.scrollTo(0, 0); // scroll to top
         break;
@@ -78,12 +78,27 @@ function enableKeyBinds() {
       case "r":
         window.location.reload(); // refresh the page
         break;
+      case "h":
+      case "ArrowLeft":
+        navigateToPost(".previous.page-button"); // navigate to previous post
+        break;
+      case "l":
+      case "ArrowRight":
+        navigateToPost(".next.page-button"); // navigate to next post
+        break;
     }
   });
 
   function toggleTheme() {
     const themeToggle = document.getElementById("theme-toggle");
     themeToggle.click();
+  }
+
+  function navigateToPost(selector) {
+    const linkElement = document.querySelector(selector);
+    if (linkElement) {
+      window.location.href = linkElement.href;
+    }
   }
 }
 

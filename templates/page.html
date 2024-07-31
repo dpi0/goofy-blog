@@ -39,11 +39,17 @@ if page.updated %}
 https://symbl.cc/en/unicode-table/#arrows#}<!-- Default text on large screens-->
 <div class="next-prev-post next-prev-container default-text">
   {% if page.lower %}
-  <a class="previous page-button" href="{{ page.lower.permalink }}"
+  <a
+    class="previous page-button"
+    href="{{ page.lower.permalink }}"
+    title="Go to previous post (or press 'h')"
     >← <strong>{{ page.lower.title }}</strong></a
   >
   {% endif %} {% if page.higher %}
-  <a class="next page-button" href="{{ page.higher.permalink }}"
+  <a
+    class="next page-button"
+    href="{{ page.higher.permalink }}"
+    title="Go to next post (or press 'l')"
     ><strong>{{ page.higher.title }}</strong> →</a
   >
   {% endif %}
