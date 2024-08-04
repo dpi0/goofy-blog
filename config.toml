@@ -40,3 +40,4 @@ index_title = "Posts"
 enablemermaid = false
 logo = "Clearly Not A.I."
 enable_lightsense_img_zoom = true
+enable_umami_analytics = true
