@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Sample Markdown Test | Clearly Not A.I. </title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+      integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css"
+    />
+    <link rel="stylesheet" href="https://dpi0.github.io/goofy-blog/styles.css" />
+    
+    <link
+      rel="icon"
+      id="favicon"
+      href="https://dpi0.github.io/goofy-blog/favicon-light.ico"
+    />
+      
+    <script src=" https://cdn.jsdelivr.net/npm/lightense-images@1.0.17/dist/lightense.min.js "></script>
+    
+    <script defer data-domain="blog.dpi0.cloud" src="https://plausible-analytics.dpi0.cloud/js/script.js"></script>
+    <script src="https://dpi0.github.io/goofy-blog/js/main.js" defer></script>
+  </head>
+
+  <body>
+    <nav class="navbar">
+  <a href="https://dpi0.github.io/goofy-blog"
+    ><div class="title-logo">Clearly Not A.I.</div></a
+  >
+   
+
+  <button
+    id="theme-toggle-navbar"
+    aria-label="theme switch"
+    data-moon-icon="&lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;20&quot; height=&quot;20&quot;&gt;&lt;path d=&quot;M10 7C10 10.866 13.134 14 17 14C18.9584 14 20.729 13.1957 21.9995 11.8995C22 11.933 22 11.9665 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C12.0335 2 12.067 2 12.1005 2.00049C10.8043 3.27098 10 5.04157 10 7ZM4 12C4 16.4183 7.58172 20 12 20C15.0583 20 17.7158 18.2839 19.062 15.7621C18.3945 15.9187 17.7035 16 17 16C12.0294 16 8 11.9706 8 7C8 6.29648 8.08133 5.60547 8.2379 4.938C5.71611 6.28423 4 8.9417 4 12Z&quot; fill=&quot;currentColor&quot;&gt;&lt;&#x2F;path&gt;&lt;&#x2F;svg&gt;"
+    data-sun-icon="&lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;20&quot; height=&quot;20&quot;&gt;&lt;path d=&quot;M12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16ZM11 1H13V4H11V1ZM11 20H13V23H11V20ZM3.51472 4.92893L4.92893 3.51472L7.05025 5.63604L5.63604 7.05025L3.51472 4.92893ZM16.9497 18.364L18.364 16.9497L20.4853 19.0711L19.0711 20.4853L16.9497 18.364ZM19.0711 3.51472L20.4853 4.92893L18.364 7.05025L16.9497 5.63604L19.0711 3.51472ZM5.63604 16.9497L7.05025 18.364L4.92893 20.4853L3.51472 19.0711L5.63604 16.9497ZM23 11V13H20V11H23ZM4 11V13H1V11H4Z&quot; fill=&quot;currentColor&quot;&gt;&lt;&#x2F;path&gt;&lt;&#x2F;svg&gt;"
+    class="theme-toggle-navbar"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path d="M10 7C10 10.866 13.134 14 17 14C18.9584 14 20.729 13.1957 21.9995 11.8995C22 11.933 22 11.9665 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C12.0335 2 12.067 2 12.1005 2.00049C10.8043 3.27098 10 5.04157 10 7ZM4 12C4 16.4183 7.58172 20 12 20C15.0583 20 17.7158 18.2839 19.062 15.7621C18.3945 15.9187 17.7035 16 17 16C12.0294 16 8 11.9706 8 7C8 6.29648 8.08133 5.60547 8.2379 4.938C5.71611 6.28423 4 8.9417 4 12Z" fill="currentColor"></path></svg>
+  </button>
+  <button id="navbar-toggle" class="navbar-toggle">☰</button>
+</nav>
+
+    <div class="pure-g blog">
+      <div class="pure-u-1 pure-u-md-1-4">
+        <section class="sidebar" id="sidebar">
+          <a
+            href="https://dpi0.github.io/goofy-blog"
+            title="Go to home (or press 'g')"
+            ><div class="title-logo">Clearly<br />Not<br />A.I.</div></a
+          >
+
+          <div class="sidebar-content">
+   
+
+  <button
+    id="theme-toggle"
+    aria-label="theme switch"
+    data-moon-icon="&lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;20&quot; height=&quot;20&quot;&gt;&lt;path d=&quot;M10 7C10 10.866 13.134 14 17 14C18.9584 14 20.729 13.1957 21.9995 11.8995C22 11.933 22 11.9665 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C12.0335 2 12.067 2 12.1005 2.00049C10.8043 3.27098 10 5.04157 10 7ZM4 12C4 16.4183 7.58172 20 12 20C15.0583 20 17.7158 18.2839 19.062 15.7621C18.3945 15.9187 17.7035 16 17 16C12.0294 16 8 11.9706 8 7C8 6.29648 8.08133 5.60547 8.2379 4.938C5.71611 6.28423 4 8.9417 4 12Z&quot; fill=&quot;currentColor&quot;&gt;&lt;&#x2F;path&gt;&lt;&#x2F;svg&gt;"
+    data-sun-icon="&lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;20&quot; height=&quot;20&quot;&gt;&lt;path d=&quot;M12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16ZM11 1H13V4H11V1ZM11 20H13V23H11V20ZM3.51472 4.92893L4.92893 3.51472L7.05025 5.63604L5.63604 7.05025L3.51472 4.92893ZM16.9497 18.364L18.364 16.9497L20.4853 19.0711L19.0711 20.4853L16.9497 18.364ZM19.0711 3.51472L20.4853 4.92893L18.364 7.05025L16.9497 5.63604L19.0711 3.51472ZM5.63604 16.9497L7.05025 18.364L4.92893 20.4853L3.51472 19.0711L5.63604 16.9497ZM23 11V13H20V11H23ZM4 11V13H1V11H4Z&quot; fill=&quot;currentColor&quot;&gt;&lt;&#x2F;path&gt;&lt;&#x2F;svg&gt;"
+    class="theme-toggle"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path d="M10 7C10 10.866 13.134 14 17 14C18.9584 14 20.729 13.1957 21.9995 11.8995C22 11.933 22 11.9665 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C12.0335 2 12.067 2 12.1005 2.00049C10.8043 3.27098 10 5.04157 10 7ZM4 12C4 16.4183 7.58172 20 12 20C15.0583 20 17.7158 18.2839 19.062 15.7621C18.3945 15.9187 17.7035 16 17 16C12.0294 16 8 11.9706 8 7C8 6.29648 8.08133 5.60547 8.2379 4.938C5.71611 6.28423 4 8.9417 4 12Z" fill="currentColor"></path></svg>
+  </button>
+
+  <div class="links-sidebar">
+    <ul>
+      <li><a href="mailto:dpi0.dev@proton.me">mail</a></li>
+      <li><a href="https://dpi0.github.io/goofy-blog/projects">projects</a></li>
+    </ul>
+  </div>
+
+  <div class="about-me-sidebar">
+    <span>about me</span>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit at
+      tempore, minus quisquam nemo blanditiis vitae repudiandae quis et porro ad
+      corporis quo minima harum laboriosam provident culpa! Molestias, totam.
+    </p>
+  </div>
+
+  <div class="social-links-sidebar">
+    <a href="https://github.com/dpi0">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 16 16"
+        class="social-links-sidebar-icon"
+      >
+        <title>GitHub</title>
+        <path
+          d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"
+        ></path>
+      </svg>
+    </a>
+    <a href="mailto:dpi0.dev@proton.me">
+      <svg
+        role="img"
+        viewBox="0 0 24 24"
+        class="social-links-sidebar-icon"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>Proton Mail</title>
+        <path
+          d="m15.24 8.998 3.656-3.073v15.81H2.482C1.11 21.735 0 20.609 0 19.223V6.944l7.58 6.38a2.186 2.186 0 0 0 2.871-.042l4.792-4.284h-.003zm-5.456 3.538 1.809-1.616a2.438 2.438 0 0 1-1.178-.533L.905 2.395A.552.552 0 0 0 0 2.826v2.811l8.226 6.923a1.186 1.186 0 0 0 1.558-.024zM23.871 2.463a.551.551 0 0 0-.776-.068l-3.199 2.688v16.653h1.623c1.371 0 2.481-1.127 2.481-2.513V2.824a.551.551 0 0 0-.129-.36z"
+        />
+      </svg>
+    </a>
+
+    <a href="https://youtube.com/@dpi0-yt">
+      <svg
+        role="img"
+        viewBox="0 0 24 24"
+        class="social-links-sidebar-icon"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>YouTube</title>
+        <path
+          d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+        />
+      </svg>
+    </a>
+
+    <a href="https://discord.gg/2gkXvMvPju">
+      <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <title>Discord</title>
+        <path
+          d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"
+        />
+      </svg>
+    </a>
+  </div>
+</div>
+
+        </section>
+      </div>
+      <div class="pure-u-1 pure-u-md-3-4">
+        <section class="content">
+
+<h1 class="title"><span class="title-background">Sample Markdown Test</span></h1>
+
+<button id="backToTop" title="Go back to top (or press 'p')">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="backToTop">
+    <path
+      d="M18.78 15.78a.749.749 0 0 1-1.06 0L12 10.061 6.28 15.78a.749.749 0 1 1-1.06-1.06l6.25-6.25a.749.749 0 0 1 1.06 0l6.25 6.25a.749.749 0 0 1 0 1.06Z"
+    ></path>
+  </svg>
+</button>
+
+ 
+<p class="post-date">
+  <span class="date-background"
+    >Updated: Tue 30 July, 2024</span
+  >
+</p>
+ <h1 id="an-h1-header">An h1 header</h1>
+<p>Paragraphs are separated by a blank line.</p>
+<p>2nd paragraph. <em>Italic</em>, <strong>bold</strong>, and <code>monospace</code>. Itemized lists
+look like:</p>
+<ul>
+<li>this one</li>
+<li>that one</li>
+<li>the other one</li>
+</ul>
+<p>Note that --- not considering the asterisk --- the actual text
+content starts at 4-columns in.</p>
+<blockquote>
+<p>Block quotes are
+written like so.</p>
+<p>They can span multiple paragraphs,
+if you like.</p>
+</blockquote>
+<p>Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., &quot;it's all
+in chapters 12--14&quot;). Three dots ... will be converted to an ellipsis.
+Unicode is supported. ☺</p>
+<h2 id="an-h2-header">An h2 header</h2>
+<p>Here's a numbered list:</p>
+<ol>
+<li>first item</li>
+<li>second item</li>
+<li>third item</li>
+</ol>
+<p>Note again how the actual text starts at 4 columns in (4 characters
+from the left side). Here's a code sample:</p>
+<pre style="background-color:#212121;color:#eeffff;"><code><span># Let me re-iterate ...
+</span><span>for i in 1 .. 10 { do-something(i) }
+</span></code></pre>
+<p>As you probably guessed, indented 4 spaces. By the way, instead of
+indenting the block, you can use delimited blocks, if you like:</p>
+<pre style="background-color:#212121;color:#eeffff;"><code><span>define foobar() {
+</span><span>    print &quot;Welcome to flavor country!&quot;;
+</span><span>}
+</span></code></pre>
+<p>(which makes copying &amp; pasting easier). You can optionally mark the
+delimited block for Pandoc to syntax highlight it:</p>
+<pre data-lang="python" style="background-color:#212121;color:#eeffff;" class="language-python "><code class="language-python" data-lang="python"><span style="font-style:italic;color:#c792ea;">import </span><span>time
+</span><span style="font-style:italic;color:#4a4a4a;"># Quick, count to ten!
+</span><span style="font-style:italic;color:#c792ea;">for </span><span>i </span><span style="font-style:italic;color:#c792ea;">in </span><span style="color:#82aaff;">range</span><span style="color:#89ddff;">(</span><span style="color:#f78c6c;">10</span><span style="color:#89ddff;">):
+</span><span>    </span><span style="font-style:italic;color:#4a4a4a;"># (but not *too* quick)
+</span><span>    </span><span style="color:#82aaff;">time</span><span style="color:#89ddff;">.</span><span style="color:#82aaff;">sleep</span><span style="color:#89ddff;">(</span><span style="color:#f78c6c;">0</span><span style="color:#89ddff;">.</span><span style="color:#f78c6c;">5</span><span style="color:#89ddff;">)
+</span><span>    </span><span style="color:#c792ea;">print </span><span>i
+</span></code></pre>
+<h3 id="an-h3-header">An h3 header</h3>
+<p>Now a nested list:</p>
+<ol>
+<li>
+<p>First, get these ingredients:</p>
+<ul>
+<li>carrots</li>
+<li>celery</li>
+<li>lentils</li>
+</ul>
+</li>
+<li>
+<p>Boil some water.</p>
+</li>
+<li>
+<p>Dump everything in the pot and follow
+this algorithm:</p>
+<pre style="background-color:#212121;color:#eeffff;"><code><span>find wooden spoon
+</span><span>uncover pot
+</span><span>stir
+</span><span>cover pot
+</span><span>balance wooden spoon precariously on pot handle
+</span><span>wait 10 minutes
+</span><span>goto first step (or shut off burner when done)
+</span></code></pre>
+<p>Do not bump wooden spoon or it will fall.</p>
+</li>
+</ol>
+<p>Notice again how text always lines up on 4-space indents (including
+that last line which continues item 3 above).</p>
+<p>Here's a link to <a href="http://foo.bar">a website</a>, to a <a href="https://dpi0.github.io/goofy-blog/sample-markdown/local-doc.html">local
+doc</a>, and to a <a href="https://dpi0.github.io/goofy-blog/sample-markdown/#an-h2-header">section heading in the current
+doc</a>. Here's a footnote <sup class="footnote-reference"><a href="#1">1</a></sup>.</p>
+<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<p>Footnote text goes here.</p>
+</div>
+<p>Tables can look like this:</p>
+<p>size material color</p>
+<hr />
+<p>9 leather brown
+10 hemp canvas natural
+11 glass transparent</p>
+<p>Table: Shoes, their sizes, and what they're made of</p>
+<p>(The above is the caption for the table.) Pandoc also supports
+multi-line tables:</p>
+<hr />
+<p>keyword text</p>
+<hr />
+<p>red Sunsets, apples, and
+other red or reddish
+things.</p>
+<p>green Leaves, grass, frogs
+and other things it's
+not easy being.</p>
+<hr />
+<p>A horizontal rule follows.</p>
+<hr />
+<p>Here's a definition list:</p>
+<p>apples
+: Good for making applesauce.
+oranges
+: Citrus!
+tomatoes
+: There's no &quot;e&quot; in tomatoe.</p>
+<p>Again, text is indented 4 spaces. (Put a blank line between each
+term/definition pair to spread things out more.)</p>
+<p>Here's a &quot;line block&quot;:</p>
+<p>| Line one
+| Line too
+| Line tree</p>
+<p>and images can be specified like so:</p>
+<p>Inline math equations go in like so: $\omega = d\phi / dt$. Display
+math should get its own line and be put in in double-dollarsigns:</p>
+<p>$$I = \int \rho R^{2} dV$$</p>
+<p>And note that you can backslash-escape any punctuation characters
+which you wish to be displayed literally, ex.: `foo`, *bar*, etc.</p>
+<h1 id="h1-heading-8">h1 Heading 8-)</h1>
+<h2 id="h2-heading">h2 Heading</h2>
+<h3 id="h3-heading">h3 Heading</h3>
+<h4 id="h4-heading">h4 Heading</h4>
+<h5 id="h5-heading">h5 Heading</h5>
+<h6 id="h6-heading">h6 Heading</h6>
+<h2 id="typographic-replacements">Typographic replacements</h2>
+<p>Enable typographer option to see result.</p>
+<p>(c) (C) (r) (R) (tm) (TM) (p) (P) +-</p>
+<p>test.. test... test..... test?..... test!....</p>
+<p>!!!!!! ???? ,, -- ---</p>
+<p>&quot;Smartypants, double quotes&quot; and 'single quotes'</p>
+<h2 id="emphasis">Emphasis</h2>
+<p><strong>This is bold text</strong></p>
+<p><strong>This is bold text</strong></p>
+<p><em>This is italic text</em></p>
+<p><em>This is italic text</em></p>
+<p><del>Strikethrough</del></p>
+<h2 id="blockquotes">Blockquotes</h2>
+<blockquote>
+<p>Blockquotes can also be nested...</p>
+<blockquote>
+<p>...by using additional greater-than signs right next to each other...</p>
+<blockquote>
+<p>...or with spaces between arrows.</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="lists">Lists</h2>
+<p>Unordered</p>
+<ul>
+<li>Create a list by starting a line with <code>+</code>, <code>-</code>, or <code>*</code></li>
+<li>Sub-lists are made by indenting 2 spaces:
+<ul>
+<li>Marker character change forces new list start:
+<ul>
+<li>Ac tristique libero volutpat at</li>
+</ul>
+<ul>
+<li>Facilisis in pretium nisl aliquet</li>
+</ul>
+<ul>
+<li>Nulla volutpat aliquam velit</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Very easy!</li>
+</ul>
+<p>Ordered</p>
+<ol>
+<li>
+<p>Lorem ipsum dolor sit amet</p>
+</li>
+<li>
+<p>Consectetur adipiscing elit</p>
+</li>
+<li>
+<p>Integer molestie lorem at massa</p>
+</li>
+<li>
+<p>You can use sequential numbers...</p>
+</li>
+<li>
+<p>...or keep all the numbers as <code>1.</code></p>
+</li>
+</ol>
+<p>Start numbering with offset:</p>
+<ol start="57">
+<li>foo</li>
+<li>bar</li>
+</ol>
+<h2 id="code">Code</h2>
+<p>Inline <code>code</code></p>
+<p>Indented code</p>
+<pre style="background-color:#212121;color:#eeffff;"><code><span>// Some comments
+</span><span>line 1 of code
+</span><span>line 2 of code
+</span><span>line 3 of code
+</span></code></pre>
+<p>Block code &quot;fences&quot;</p>
+<pre style="background-color:#212121;color:#eeffff;"><code><span>Sample text here...
+</span></code></pre>
+<p>Syntax highlighting</p>
+<pre data-lang="js" style="background-color:#212121;color:#eeffff;" class="language-js "><code class="language-js" data-lang="js"><span style="font-style:italic;color:#c792ea;">var </span><span style="color:#82aaff;">foo </span><span style="color:#89ddff;">= </span><span style="font-style:italic;color:#c792ea;">function </span><span style="color:#89ddff;">(</span><span style="color:#f78c6c;">bar</span><span style="color:#89ddff;">) {
+</span><span>  </span><span style="font-style:italic;color:#c792ea;">return </span><span>bar</span><span style="color:#89ddff;">++;
+</span><span style="color:#89ddff;">};
+</span><span>
+</span><span style="color:#ffcb6b;">console</span><span style="color:#89ddff;">.</span><span style="color:#82aaff;">log</span><span>(</span><span style="color:#82aaff;">foo</span><span>(</span><span style="color:#f78c6c;">5</span><span>))</span><span style="color:#89ddff;">;
+</span></code></pre>
+<h2 id="tables">Tables</h2>
+<h3 id="left-aligned-columns">Left-aligned columns</h3>
+<table class="table-shortcode">
+   
+  <thead>
+    <tr>
+      
+      <th>Option</th>
+      
+      <th> Description</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      
+      <td>data</td>
+      
+      <td> path to data files to supply the data that will be passed into templates.</td>
+      
+    </tr>
+    
+    <tr>
+      
+      <td>engine</td>
+      
+      <td> engine to be used for processing templates. Handlebars is the default.</td>
+      
+    </tr>
+    
+    <tr>
+      
+      <td>ext</td>
+      
+      <td> extension to be used for dest files.</td>
+      
+    </tr>
+    
+  </tbody>
+  
+</table>
+<h3 id="right-aligned-columns">Right-aligned columns</h3>
+<table class="table-shortcode">
+   
+  <thead>
+    <tr>
+      
+      <th>Option</th>
+      
+      <th> Description</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      
+      <td>data</td>
+      
+      <td> path to data files to supply the data that will be passed into templates.</td>
+      
+    </tr>
+    
+    <tr>
+      
+      <td>engine</td>
+      
+      <td> engine to be used for processing templates. Handlebars is the default.</td>
+      
+    </tr>
+    
+    <tr>
+      
+      <td>ext</td>
+      
+      <td> extension to be used for dest files.</td>
+      
+    </tr>
+    
+  </tbody>
+  
+</table>
+<h2 id="links">Links</h2>
+<p><a href="http://dev.nodeca.com">link text</a></p>
+<p><a href="http://nodeca.github.io/pica/demo/" title="title text!">link with title</a></p>
+<p>Autoconverted link https://github.com/nodeca/pica (enable linkify to see)</p>
+<p>![Alt text][id]</p>
+<p>With a reference later in the document defining the URL location:</p>
+<h2 id="plugins">Plugins</h2>
+<p>The killer feature of <code>markdown-it</code> is very effective support of
+<a href="https://www.npmjs.org/browse/keyword/markdown-it-plugin">syntax plugins</a>.</p>
+<h3 id="emojies"><a href="https://github.com/markdown-it/markdown-it-emoji">Emojies</a></h3>
+<blockquote>
+<p>Classic markup: :wink: :cry: :laughing: :yum:</p>
+<p>Shortcuts (emoticons): :-) :-( 8-) ;)</p>
+</blockquote>
+<p>see <a href="https://github.com/markdown-it/markdown-it-emoji#change-output">how to change output</a> with twemoji.</p>
+<h3 id="subscript-superscript"><a href="https://github.com/markdown-it/markdown-it-sub">Subscript</a> / <a href="https://github.com/markdown-it/markdown-it-sup">Superscript</a></h3>
+<ul>
+<li>19^th^</li>
+<li>H~2~O</li>
+</ul>
+<h3 id="ins"><a href="https://github.com/markdown-it/markdown-it-ins">&lt;ins&gt;</a></h3>
+<p>++Inserted text++</p>
+<h3 id="mark"><a href="https://github.com/markdown-it/markdown-it-mark">&lt;mark&gt;</a></h3>
+<p>==Marked text==</p>
+<h3 id="footnotes"><a href="https://github.com/markdown-it/markdown-it-footnote">Footnotes</a></h3>
+<p>Footnote 1 link<sup class="footnote-reference"><a href="#first">2</a></sup>.</p>
+<p>Footnote 2 link<sup class="footnote-reference"><a href="#second">3</a></sup>.</p>
+<p>Inline footnote^[Text of inline footnote] definition.</p>
+<p>Duplicated footnote reference<sup class="footnote-reference"><a href="#second">3</a></sup>.</p>
+<div class="footnote-definition" id="first"><sup class="footnote-definition-label">2</sup>
+<p>Footnote <strong>can have markup</strong></p>
+</div>
+<pre style="background-color:#212121;color:#eeffff;"><code><span>and multiple paragraphs.
+</span></code></pre>
+<div class="footnote-definition" id="second"><sup class="footnote-definition-label">3</sup>
+<p>Footnote text.</p>
+</div>
+<h3 id="definition-lists"><a href="https://github.com/markdown-it/markdown-it-deflist">Definition lists</a></h3>
+<p>Term 1</p>
+<p>: Definition 1
+with lazy continuation.</p>
+<p>Term 2 with <em>inline markup</em></p>
+<p>: Definition 2</p>
+<pre style="background-color:#212121;color:#eeffff;"><code><span>    { some code, part of Definition 2 }
+</span><span>
+</span><span>Third paragraph of definition 2.
+</span></code></pre>
+<p><em>Compact style:</em></p>
+<p>Term 1
+~ Definition 1</p>
+<p>Term 2
+~ Definition 2a
+~ Definition 2b</p>
+<h3 id="abbreviations"><a href="https://github.com/markdown-it/markdown-it-abbr">Abbreviations</a></h3>
+<p>This is HTML abbreviation example.</p>
+<p>It converts &quot;HTML&quot;, but keep intact partial entries like &quot;xxxHTMLyyy&quot; and so on.</p>
+<p>*[HTML]: Hyper Text Markup Language</p>
+<h3 id="custom-containers"><a href="https://github.com/markdown-it/markdown-it-container">Custom containers</a></h3>
+<p>::: warning
+<em>here be dragons</em>
+:::</p>
+ 
+<p class="post-date">
+  Originally posted on: Mon 22 July, 2024
+</p>
+ <!-- Default text on large screens-->
+<div class="next-prev-post next-prev-container default-text">
+   
+  <a
+    class="next page-button"
+    href="https:&#x2F;&#x2F;dpi0.github.io&#x2F;goofy-blog&#x2F;markdown-preview-content-test-long&#x2F;"
+    title="Go to next post (or press 'l')"
+    ><strong>Markdown Preview Content Test Long</strong> →</a
+  >
+  
+</div>
+
+<!-- Alternative text for small screens -->
+<div class="next-prev-post next-prev-container small-screen-text">
+   
+  <a class="next page-button" href="https:&#x2F;&#x2F;dpi0.github.io&#x2F;goofy-blog&#x2F;markdown-preview-content-test-long&#x2F;"
+    ><strong>Next Post →</strong></a
+  >
+  
+</div>
+
+<hr />
+<footer class="footer">
+  <div class="pure-g">
+    <div class="pure-u-1 pure-u-md-5-8 footer-links">
+      <a href="##">About Me</a>
+      <span class="footer-link-separator">·</span>
+      <a href="mailto:dpi0.dev@proton.me">Mail</a>
+    </div>
+    <div class="pure-u-1 pure-u-md-3-8 footer-maintainer">
+      Blog maintained by
+      <a href="https://github.com/dpi0">dpi0</a>
+    </div>
+  </div>
+</footer>
+ </section>
+      </div>
+    </div>
+     
+    <script>
+      (function () {
+        // Prevent FUOC
+        const currentTheme = localStorage.getItem("theme") || "light";
+        document.documentElement.setAttribute("data-theme", currentTheme);
+
+        // Prevent theme icon flicker
+        const toggleButton = document.getElementById("theme-toggle");
+        const moonIcon = toggleButton.getAttribute("data-moon-icon");
+        const sunIcon = toggleButton.getAttribute("data-sun-icon");
+        toggleButton.innerHTML = currentTheme === "light" ? moonIcon : sunIcon;
+
+        // Prevent theme icon flicker in navbar
+        const toggleButtonNavbar = document.getElementById(
+          "theme-toggle-navbar"
+        );
+        const moonIconNavbar = toggleButton.getAttribute("data-moon-icon");
+        const sunIconNavbar = toggleButton.getAttribute("data-sun-icon");
+        toggleButtonNavbar.innerHTML =
+          currentTheme === "light" ? moonIcon : sunIcon;
+
+        // Prevent favicon flicker
+        const favicon = document.getElementById("favicon");
+        favicon.href =
+          currentTheme === "light"
+            ? "https://dpi0.github.io/goofy-blog/favicon-light.ico"
+            : "https://dpi0.github.io/goofy-blog/favicon-dark.ico";
+      })();
+
+      document.addEventListener("DOMContentLoaded", function () {
+        Lightense("img.lightense");
+      });
+    </script>
+  </body>
+</html>
