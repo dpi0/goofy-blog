@@ -1,7 +1,7 @@
 # https://www.getzola.org/documentation/getting-started/configuration/
 
 # The URL the site will be built for
-base_url = "https://dpi0.github.io/blog/"
+base_url = "https://dpi0.github.io/goofy-blog/"
 
 default_language = "en"
 
